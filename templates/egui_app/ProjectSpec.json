@@ -1,0 +1,1 @@
+{"template_id":"egui_app","language":"rust","expected_files":["Cargo.toml","src/main.rs"],"default_commands":["cargo run"],"tags":["egui","gui","rust"]}

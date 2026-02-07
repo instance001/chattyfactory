@@ -1,0 +1,25 @@
+/target/
+**/*.rs.bk
+
+# Local models and generated outputs
+/models/
+/output/
+
+# Runtime artifacts (generated during runs)
+/runtime/logs/
+/runtime/plans/
+/runtime/plan_steps/
+/runtime/work_orders/
+/runtime/runs/
+/runtime/journal/
+/runtime/model_outputs/
+/runtime/context/
+/runtime/anchors/
+
+# Local backend binaries (users install their own)
+/runtime/bin/**
+!/runtime/bin/README.md
+!/runtime/bin/windows/README.md
+!/runtime/bin/linux/README.md
+!/runtime/bin/macos/README.md
+

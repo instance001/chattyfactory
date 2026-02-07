@@ -1,0 +1,16 @@
+{
+    "max_tokens":  128,
+    "context":  2048,
+    "backend":  "llama.cpp",
+    "max_chunks":  null,
+    "threads":  4,
+    "extra_args":  [
+
+                   ],
+    "idle_timeout_ms":  null,
+    "timeout_ms":  120000,
+    "max_stdout_kb":  512,
+    "top_p":  0.9,
+    "model_path":  "models/tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf",
+    "temperature":  0.7
+}

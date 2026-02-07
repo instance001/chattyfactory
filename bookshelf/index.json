@@ -1,0 +1,131 @@
+{
+  "entries": [
+    {
+      "path": "C:\\Users\\User\\Desktop\\chattyfactory\\bookshelf\\references\\apply_patch_unified_diff_quickref.json",
+      "title": "apply_patch unified diff quickref",
+      "tags": [
+        "reference",
+        "apply_patch",
+        "unified_diff",
+        "patch_first",
+        "verify",
+        "plan_md",
+        "python_cli"
+      ],
+      "anchor": "python_cli",
+      "outcome": "Minimal unified diff hunks that compile; patch small and verify with contains"
+    },
+    {
+      "path": "C:\\Users\\User\\Desktop\\chattyfactory\\bookshelf\\references\\common_plan_failures_no_fake_actions.json",
+      "title": "Common Plan.md failures (and fixes)",
+      "tags": [
+        "reference",
+        "failures",
+        "repair",
+        "plan_md",
+        "actions",
+        "verify",
+        "placeholders",
+        "python_cli"
+      ],
+      "anchor": "python_cli",
+      "outcome": "Do not invent actions; keep 3-8 steps; keep paths relative; always verify"
+    },
+    {
+      "path": "C:\\Users\\User\\Desktop\\chattyfactory\\bookshelf\\builds/bad\\wo2.json",
+      "title": "hello",
+      "tags": [],
+      "anchor": "wo2",
+      "outcome": "failed"
+    },
+    {
+      "path": "C:\\Users\\User\\Desktop\\chattyfactory\\bookshelf\\plans/good\\wo2.json",
+      "title": "let's build a simple hello world app in python",
+      "tags": [],
+      "anchor": "egui_app",
+      "outcome": "plan"
+    },
+    {
+      "path": "C:\\Users\\User\\Desktop\\chattyfactory\\bookshelf\\builds/good\\wo2.json",
+      "title": "let's build a simple hello world app in python",
+      "tags": [],
+      "anchor": "wo2",
+      "outcome": "success"
+    },
+    {
+      "path": "C:\\Users\\User\\Desktop\\chattyfactory\\bookshelf\\references\\plan_md_action_cookbook_python.json",
+      "title": "Plan.md action cookbook (small-model friendly)",
+      "tags": [
+        "reference",
+        "plan_md",
+        "actions",
+        "syntax",
+        "verify",
+        "apply_patch",
+        "write_file",
+        "ensure_dir",
+        "run",
+        "python_cli",
+        "small_llm"
+      ],
+      "anchor": "python_cli",
+      "outcome": "Supported actions + exact syntax + examples; do not invent actions"
+    },
+    {
+      "path": "C:\\Users\\User\\Desktop\\chattyfactory\\bookshelf\\plans/bad\\wo2.json",
+      "title": "plan_invalid",
+      "tags": [],
+      "anchor": "unknown",
+      "outcome": "plan_invalid"
+    },
+    {
+      "path": "C:\\Users\\User\\Desktop\\chattyfactory\\bookshelf\\references\\python_cli_hello_world_golden_path.json",
+      "title": "Python CLI hello-world golden path",
+      "tags": [
+        "reference",
+        "python",
+        "cli",
+        "hello_world",
+        "plan_md",
+        "python_cli",
+        "golden_path"
+      ],
+      "anchor": "python_cli",
+      "outcome": "A minimal 3-5 step transformation plan from python_cli to hello world CLI"
+    },
+    {
+      "path": "C:\\Users\\User\\Desktop\\chattyfactory\\bookshelf\\references\\small_llm_build_to_code.json",
+      "title": "Small local LLM build-to-code playbook (patch-first)",
+      "tags": [
+        "reference",
+        "small_llm",
+        "local_model",
+        "plan_md",
+        "patch_first",
+        "apply_patch",
+        "verify",
+        "anchor_selection",
+        "egui_app",
+        "rust_cli"
+      ],
+      "anchor": "reference",
+      "outcome": "reference"
+    },
+    {
+      "path": "C:\\Users\\User\\Desktop\\chattyfactory\\bookshelf\\references\\windows_run_verify_cheatsheet.json",
+      "title": "Windows run/verify cheatsheet",
+      "tags": [
+        "reference",
+        "windows",
+        "run",
+        "verify",
+        "command",
+        "python",
+        "python_cli",
+        "plan_md"
+      ],
+      "anchor": "python_cli",
+      "outcome": "Reliable run steps on Windows; prefer python -m; keep argv simple"
+    }
+  ]
+}

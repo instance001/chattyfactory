@@ -1,0 +1,8 @@
+@package
+name = "egui_app_template"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+eframe = "0.27"
+

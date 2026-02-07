@@ -1,0 +1,13 @@
+{
+  "split_orientation": "vertical",
+  "split_ratio": 0.23125,
+  "selected_model": "C:\\Users\\User\\Desktop\\chattyfactory\\models\\gpt-oss-20b-Q4_K_M.gguf",
+  "active_project": null,
+  "output_root_override": null,
+  "policy": {
+    "allow_network": false,
+    "allow_delete": false,
+    "allow_external_paths": false
+  },
+  "last_project_seed": null
+}

@@ -1,0 +1,17 @@
+{
+  "title": "Python CLI hello-world golden path",
+  "tags": [
+    "reference",
+    "python",
+    "cli",
+    "hello_world",
+    "plan_md",
+    "python_cli",
+    "golden_path"
+  ],
+  "created_at": "2026-02-05T03:28:49Z",
+  "anchor": "python_cli",
+  "outcome": "A minimal 3-5 step transformation plan from python_cli to hello world CLI",
+  "work_order_id": "python_cli_hello_world_golden_path",
+  "content_hash": "59b9cdd597abc7c108912a14b99c6a1b190dd6d6"
+}

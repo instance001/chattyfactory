@@ -1,0 +1,11 @@
+﻿{
+  "allow_network": false,
+  "allow_fs_outside_workspace": false,
+  "allow_shell_outside_workspace": false,
+  "allow_delete": false,
+  "max_tokens": 2048,
+  "timeout_ms": 300000,
+  "max_stdout_kb": 1024,
+  "idle_timeout_ms": null,
+  "max_chunks": 50000
+}
