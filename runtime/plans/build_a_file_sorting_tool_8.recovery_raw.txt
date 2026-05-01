@@ -1,0 +1,81 @@
+You are ChattyFactory recovery assistant.
+OUTPUT CONTRACT (HARD):
+- TEXT ONLY.
+- First line MUST be .
+- Last line MUST be .
+- Between markers: output 3 to 8 Plan.md STEP LINES ONLY (no headers, no questions, no narration).
+- NO prose, NO markdown, NO code fences, NO backticks.
+Step line format:
+- [ ] <step title> | <action ...> | verify: <kind> <args...>
+Allowed actions:
+- ensure_dir <rel_dir>
+- write_file <rel_path> | contents: <text (u ... (truncated)
+[Start thinking]
+We need to output plan steps. We must create a file sorting tool. The project snapshot is empty. We need to create code files. We can create main.py, maybe a sorter module. Provide steps: ensure_dir, write_file, etc.
+We need at least 3-8 step lines. Let's do 5 steps.
+Steps:
+1. ensure_dir src
+2. write_file src/sorter.py with code that defines sort_files function.
+3. write_file main.py that imports sorter and uses it to sort files in a directory.
+4. apply_patch to add __main__ guard in main.py.
+5. run py -3 main.py? But we don't have any files to sort. We can just run to ensure no errors.
+But we need to verify existence of files. Use verify: exists src/sorter.py, exists main.py.
+We also need to ensure that the tool sorts files by extension maybe.
+Let's craft code.
+sorter.py:
+import os
+from pathlib import Path
+def sort_files(src_dir: str, dst_dir: str):
+    src = Path(src_dir)
+    dst = Path(dst_dir)
+    dst.mkdir(parents=True, exist_ok=True)
+    for file in src.iterdir():
+        if file.is_file():
+            ext = file.suffix.lstrip('.')
+            target = dst / ext
+            target.mkdir(exist_ok=True)
+            file.rename(target / file.name)
+main.py:
+import sys
+from sorter import sort_files
+if __name__ == "__main__":
+    if len(sys.argv) < 3:
+        print("Usage: python main.py <src_dir> <dst_dir>")
+    else:
+        sort_files(sys.argv[1], sys.argv[2])
+But we need to ensure __name__ not __name__? Should be __name__.
+Let's produce steps accordingly.
+We must use write_file with contents using \n escapes. Provide code.
+Also apply_patch maybe not needed if we already wrote file. But requirement: at least one write_file/apply_patch that changes a code/config file implementing requested behavior. We have write_file for sorter.py and main.py. That's enough.
+But we need to include at least one apply_patch? Not required but allowed. We can skip patch.
+We must verify existence of files.
+Let's produce steps:
+[ ] ensure_dir src | verify: dir_exists src
+[ ] write_file src/sorter.py | contents: <code>
+[ ] write_file main.py | contents: <code>
+[ ] run py -3 main.py . . .? But we need to provide arguments. We can run with no args; it will print usage. That verifies code runs.
+But we need to verify that run prints usage. Use stdout_contains "Usage:".
+So step: [ ] run py -3 main.py | verify: stdout_contains Usage:
+We also need to ensure that the tool sorts files. But we don't have sample files. We can create a test directory with some files and run. Let's add steps:
+[ ] ensure_dir test_src
+[ ] write_file test_src/a.txt | contents: hello
+[ ] write_file test_src/b.py | contents: pass
+[ ] run py -3 main.py test_src test_dst | verify: glob_count test_dst/*.txt 1 [1]
+[ ] run py -3 main.py test_src test_dst | verify: glob_count test_dst/*.py 1 [1]
+But we need to ensure test_dst dir exists. We can create it via ensure_dir test_dst.
+Let's produce steps accordingly.
+We must keep between 3-8 lines. We have many. Let's count: ensure src, write sorter, write main, ensure test_src, write a.txt, write b.py, ensure test_dst, run main with args, verify txt count, verify py count. That's 10 steps >8. Need to reduce.
+We can combine some steps: we can create test files in same step? Not possible. We can reduce by not verifying counts but just verifying existence of sorted files.
+We can do:
+[ ] ensure_dir src
+[ ] write_file src/sorter.py | contents: ...
+[ ] write_file main.py | contents: ...
+[ ] ensure_dir test_src
+[ ] write_file test_src/a.txt | contents: hello
+[ ] write_file test_src/b.py | contents: pass
+[ ] ensure_dir
+
+! grounding_gate_errors:
+- verify references unknown path: src
+- verify references unknown path: src/sorter.py
+- verify references unknown path: main.py

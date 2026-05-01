@@ -1,0 +1,1 @@
+each step must include at least one verify: clause (line: '- [ ] Initialize project | action: mkdir -p $scratch/build_a_file_sorting_tool_3 && cd $scratch/build_a_file_sorting_tool_3 && npm init --yes')

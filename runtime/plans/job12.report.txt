@@ -1,0 +1,1 @@
+each step must include at least one verify: clause (line: '- [ ] Implement file sorting logic | action args: ["scratch", "build_a_file_sorter", "sort_logic"]')

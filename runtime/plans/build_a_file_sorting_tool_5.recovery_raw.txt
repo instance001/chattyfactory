@@ -1,0 +1,17 @@
+[ ] Step title | ensure_dir /path/to/output_folder/
+| verify: exists output_folder/
+
+[ ] Step title | write_file /path/to/file_extension_1.txt | contents: "file content 1"
+| verify: exists /path/to/file_extension_1.txt
+
+[ ] Step title | ensure_dir /path/to/output_folder/with_children/
+| verify: dir_exists /path/to/output_folder/with_children/
+
+[ ] Step title | write_file /path/to/child_file_extension_2.txt | contents: "file content 2"
+| verify: exists /path/to/child_file_extension_2.txt
+
+[ ] Step title | ensure_dir /path/to/output_folder/with_more_children/
+| verify: dir_exists /path/to/output_folder/with_more_children/
+
+[ ] Step title | write_file /path/to/more_child_file_extension_3.txt | contents: "file content 3"
+| verify: exists /path/to/more_child_file_extension_3.txt

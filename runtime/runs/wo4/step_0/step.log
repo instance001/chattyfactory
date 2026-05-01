@@ -1,0 +1,5 @@
+step 0: Check project contract | ensure_dir . | verify: contains ProjectSpec.json chattyfactory.project_spec.v1
+error: py_compile failed for main.py: File "main.py", line 34
+    def load_metrics(path: str
+                    ^
+SyntaxError: '(' was never closed

@@ -1,0 +1,16 @@
+{
+  "title": "Verify kinds (memory jogger)",
+  "tags": [
+    "reference",
+    "verify",
+    "acceptance",
+    "glob_count",
+    "min_files",
+    "output_contains"
+  ],
+  "created_at": "2026-02-23T00:00:00Z",
+  "anchor": "reference",
+  "outcome": "Verify clauses supported by Plan.md compiler/runner",
+  "work_order_id": "verify_kinds",
+  "content_hash": "10ce89b83c1d3ab3d7d92bd7be8c28467e7269d3"
+}

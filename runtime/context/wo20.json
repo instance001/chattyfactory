@@ -1,0 +1,31 @@
+{
+  "anchors": [
+    "scratch"
+  ],
+  "anchor_scores": [
+    [
+      "build_a_simple_python_cli_file_sorter_input_folder_for_files_to_go_in_ou",
+      191
+    ],
+    [
+      "build_a_simple_file_sorter_in_python_cli_input_folder_for_files_to_go_in",
+      188
+    ],
+    [
+      "build_a_simple_python_based_file_sorter_input_folder_for_files_to_go_int",
+      188
+    ]
+  ],
+  "log_tail": "step 1: Write function sort_files(input_dir, output_dir) that iterates over all files in input_dir using pathlib | verify: contains 'def sort_files'\nerror: read failed for C:\\Users\\User\\Desktop\\chattyfactorysyntaxsquashing\\chattyfactory\\output\\build_a_simple_python_cli_fire_sorter_input_folder_for_files_to_go_in_ou\\'def\n",
+  "last_run_summary": "Failed at step 2: read failed for C:\\Users\\User\\Desktop\\chattyfactorysyntaxsquashing\\chattyfactory\\output\\build_a_simple_python_cli_fire_sorter_input_folder_for_files_to_go_in_ou\\'def",
+  "failing_step": 2,
+  "failing_error": "read failed for C:\\Users\\User\\Desktop\\chattyfactorysyntaxsquashing\\chattyfactory\\output\\build_a_simple_python_cli_fire_sorter_input_folder_for_files_to_go_in_ou\\'def",
+  "work_order_id": null,
+  "recovery_attempts": 0,
+  "base_path": "C:\\Users\\User\\Desktop\\chattyfactorysyntaxsquashing\\chattyfactory",
+  "recent_logs": [
+    "Log tail:\nstep 1: Write function sort_files(input_dir, output_dir) that iterates over all files in input_dir using pathlib | verify: contains 'def sort_files'\nerror: read failed for C:\\Users\\User\\Desktop\\chattyfactorysyntaxsquashing\\chattyfactory\\output\\build_a_simple_python_cli_fire_sorter_input_folder_for_files_to_go_in_ou\\'def\n",
+    "System: Build wo20 failed at step 2: read failed for C:\\Users\\User\\Desktop\\chattyfactorysyntaxsquashing\\chattyfactory\\output\\build_a_simple_python_cli_fire_sorter_input_folder_for_files_to_go_in_ou\\'def",
+    "System: Step 2 FAILED - Write function sort_files(input_dir, output_dir) that iterates over all files in input_dir using pathlib | verify: contains 'def sort_files' (read failed for C:\\Users\\User\\Desktop\\chattyfactorysyntaxsquashing\\chattyfactory\\output\\build_a_simple_python_cli_fire_sorter_input_folder_for_files_to_go_in_ou\\'def) log: C:\\Users\\User\\Desktop\\chattyfactorysyntaxsquashing\\chattyfactory\\runtime\\runs\\wo20\\step_1\\step.log"
+  ]
+}

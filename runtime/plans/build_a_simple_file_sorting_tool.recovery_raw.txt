@@ -1,0 +1,5 @@
+ensure_dir input
+ensure_dir output
+write_file input/test.txt | contents: "This is a test file."
+apply_patch patch_1.patch
+run py -3 main.py

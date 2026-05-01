@@ -1,0 +1,61 @@
+{
+  "generated_unix_ms": 1777603238318,
+  "top": [
+    {
+      "count": 2,
+      "key": "step_failed: py_compile failed for main.py: File \"main.py\", line 34\r\n    def load_metrics(path: str\r\n                    ^\r\nSyntaxError: '(' was never closed"
+    },
+    {
+      "count": 1,
+      "key": "plan_validation_error: each step must include at least one verify: clause (line: '- [ ] Create a directory for the project files | action args: mkdir -p /path/to/project/build_a_file_sorting_tool_6')"
+    },
+    {
+      "count": 1,
+      "key": "plan_validation_error: each step must include at least one verify: clause (line: '- [ ] Step 1 | Create a new directory named 'scratch' |')"
+    },
+    {
+      "count": 1,
+      "key": "plan_validation_error: each step must include at least one verify: clause (line: '- [ ] Step 2 | Create a directory named 'src' for source code | action args: create_directory_scr_src_for_source_code')"
+    },
+    {
+      "count": 1,
+      "key": "plan_validation_error: each step must include at least one verify: clause (line: '- [ ] Step 1 | Create a new Python project directory named `file_sorter` | action: mkdir file_sorter')"
+    },
+    {
+      "count": 1,
+      "key": "plan_validation_error: step line missing action segment (expected '| action ... |'): '- [ ] Create a directory for the project'"
+    },
+    {
+      "count": 1,
+      "key": "plan_validation_error: each step must include at least one verify: clause (line: '- [ ] Create an empty directory named \"scratch\" | action args: mkdir scratch')"
+    },
+    {
+      "count": 1,
+      "key": "step_failed: py_compile failed for main.py: File \"main.py\", line 4\r\n    \\u2584\\u2584 \\u2584\\u2584\r\n    ^\r\nSyntaxError: invalid character '\\u2584' (U+2584)"
+    },
+    {
+      "count": 1,
+      "key": "step_failed: verify command output missing usage: (stdout=C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\runtime\\runs\\wo7\\step_5\\verify_0_stdout.log, stderr=C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\runtime\\runs\\wo7\\step_5\\verify_0_stderr.log)"
+    },
+    {
+      "count": 1,
+      "key": "plan_validation_error: step line missing action segment (expected '| action ... |'): '- [ ] Create a directory for the project and its subdirectories.'"
+    },
+    {
+      "count": 1,
+      "key": "plan_validation_error: step line missing action segment (expected '| action ... |'): '- [ ] Install Python and pip if not already installed.'"
+    },
+    {
+      "count": 1,
+      "key": "plan_validation_error: each step must include at least one verify: clause (line: '- [ ] Implement file sorting logic | action args: [\"scratch\", \"build_a_file_sorter\", \"sort_logic\"]')"
+    },
+    {
+      "count": 1,
+      "key": "plan_validation_error: each step must include at least one verify: clause (line: '- [ ] Initialize project | action: mkdir -p $scratch/build_a_file_sorting_tool_3 && cd $scratch/build_a_file_sorting_tool_3 && npm init --yes')"
+    },
+    {
+      "count": 1,
+      "key": "plan_validation_error: step line missing action segment (expected '| action ... |'): '- [ ] Create directory for the tool: `mkdir -p $scratch/tool`'"
+    }
+  ]
+}

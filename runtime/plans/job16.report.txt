@@ -1,0 +1,1 @@
+each step must include at least one verify: clause (line: '- [ ] Create an empty directory named "scratch" | action args: mkdir scratch')

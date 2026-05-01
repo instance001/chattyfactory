@@ -1,0 +1,33 @@
+{
+  "anchors": [
+    "python_cli",
+    "rust_cli",
+    "egui_app"
+  ],
+  "anchor_scores": [
+    [
+      "build_a_simple_file_sorter_in_python_cli_input_folder_for_files_to_go_in",
+      218
+    ],
+    [
+      "build_a_simple_python_based_file_sorter_input_folder_for_files_to_go_int",
+      218
+    ],
+    [
+      "build_a_simple_file_sorter_in_python_cli_input_folder_for_files_to_sort",
+      208
+    ]
+  ],
+  "log_tail": "step 2: Run | run python main.py | verify: exists main.py\nerror: command [\"python\", \"main.py\"] failed with code Some(2) (stdout=C:\\Users\\User\\Desktop\\chattyfactorysyntaxsquashing\\chattyfactory\\runtime\\runs\\wo19\\step_2\\stdout.log, stderr=C:\\Users\\User\\Desktop\\chattyfactorysyntaxsquashing\\chattyfactory\\runtime\\runs\\wo19\\step_2\\stderr.log)\n",
+  "last_run_summary": "Failed at step 3: command [\"python\", \"main.py\"] failed with code Some(2) (stdout=C:\\Users\\User\\Desktop\\chattyfactorysyntaxsquashing\\chattyfactory\\runtime\\runs\\wo19\\step_2\\stdout.log, stderr=C:\\Users\\User\\Desktop\\chattyfactorysyntaxsquashing\\chattyfactory\\runtime\\runs\\wo19\\step_2\\stderr.log)",
+  "failing_step": 3,
+  "failing_error": "command [\"python\", \"main.py\"] failed with code Some(2) (stdout=C:\\Users\\User\\Desktop\\chattyfactorysyntaxsquashing\\chattyfactory\\runtime\\runs\\wo19\\step_2\\stdout.log, stderr=C:\\Users\\User\\Desktop\\chattyfactorysyntaxsquashing\\chattyfactory\\runtime\\runs\\wo19\\step_2\\stderr.log)",
+  "work_order_id": null,
+  "recovery_attempts": 0,
+  "base_path": "C:\\Users\\User\\Desktop\\chattyfactorysyntaxsquashing\\chattyfactory",
+  "recent_logs": [
+    "Log tail:\nstep 2: Run | run python main.py | verify: exists main.py\nerror: command [\"python\", \"main.py\"] failed with code Some(2) (stdout=C:\\Users\\User\\Desktop\\chattyfactorysyntaxsquashing\\chattyfactory\\runtime\\runs\\wo19\\step_2\\stdout.log, stderr=C:\\Users\\User\\Desktop\\chattyfactorysyntaxsquashing\\chattyfactory\\runtime\\runs\\wo19\\step_2\\stderr.log)\n",
+    "System: Build wo19 failed at step 3: command [\"python\", \"main.py\"] failed with code Some(2) (stdout=C:\\Users\\User\\Desktop\\chattyfactorysyntaxsquashing\\chattyfactory\\runtime\\runs\\wo19\\step_2\\stdout.log, stderr=C:\\Users\\User\\Desktop\\chattyfactorysyntaxsquashing\\chattyfactory\\runtime\\runs\\wo19\\step_2\\stderr.log)",
+    "System: Step 3 FAILED - Run | run python main.py | verify: exists main.py (command [\"python\", \"main.py\"] failed with code Some(2) (stdout=C:\\Users\\User\\Desktop\\chattyfactorysyntaxsquashing\\chattyfactory\\runtime\\runs\\wo19\\step_2\\stdout.log, stderr=C:\\Users\\User\\Desktop\\chattyfactorysyntaxsquashing\\chattyfactory\\runtime\\runs\\wo19\\step_2\\stderr.log)) log: C:\\Users\\User\\Desktop\\chattyfactorysyntaxsquashing\\chattyfactory\\runtime\\runs\\wo19\\step_2\\step.log"
+  ]
+}

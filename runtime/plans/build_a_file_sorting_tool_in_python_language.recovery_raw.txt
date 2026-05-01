@@ -1,0 +1,28 @@
+[ ] Step 1 | ensure_dir input/
+verify: exists input/
+
+[ ] Step 2 | write_file input/sorted_files.txt | contents: 
+print("Sorted files are:")
+for file in sorted(os.listdir(input)):
+    print(file)
+verify: exists input/sorted_files.txt
+
+[ ] Step 3 | ensure_dir output
+verify: exists output
+
+[ ] Step 4 | apply_patch output/README.md | patch: 
+diff hunk:
+--- a/output/README.md
++++ b/output/README.md
+@@ -1,5 +1,5 @@
+-# File Sorter\n+Sorted Files
+
+-Usage:\n+To use the file sorter, run:
+
++python main.py
+
+-Input files are sorted by extension.\n+The input files should be sorted in a way that makes sense to you.
+
+## Example Usage\n+- Input: [text.txt, image.jpg, pdf.pdf]\n+Sorted output: text.txt, image.jpg, pdf.pdf
+verify: contains README.md #1
+verify: min_files output 1

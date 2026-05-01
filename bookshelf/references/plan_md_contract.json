@@ -1,0 +1,16 @@
+{
+  "title": "Plan.md contract (memory jogger)",
+  "tags": [
+    "reference",
+    "plan_md",
+    "contract",
+    "format",
+    "verify",
+    "actions"
+  ],
+  "created_at": "2026-02-23T00:00:00Z",
+  "anchor": "reference",
+  "outcome": "Strict Plan.md headers + step-line contract + allowed actions/verifies",
+  "work_order_id": "plan_md_contract",
+  "content_hash": "8dc118b94ad37cc09399226718af660639db3ba0"
+}

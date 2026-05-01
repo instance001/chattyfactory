@@ -1,0 +1,175 @@
+{
+  "metadata": {
+    "created_at": "2026-04-30T22:35:06.265142100+00:00",
+    "id": "wo5",
+    "title": "let's build a simple gui dashboard with a gpu monitor window"
+  },
+  "plan_receipt_hash": "6508fdac8909da13f5e9c2d8881d03510a7aa3b4345562a82e39caa4aabdb073",
+  "policy": {
+    "allow_delete": false,
+    "allow_external_paths": false,
+    "allow_network": false
+  },
+  "steps": [
+    {
+      "action": {
+        "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window_2\\.",
+        "type": "ensure_dir"
+      },
+      "done_means": "dir .",
+      "files": [
+        "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window_2\\."
+      ],
+      "title": "Prepare project root | ensure_dir . | verify: dir_exists .",
+      "verify": [
+        {
+          "kind": "dir_exists",
+          "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window_2\\."
+        },
+        {
+          "kind": "dir_exists",
+          "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window_2\\."
+        }
+      ]
+    },
+    {
+      "action": {
+        "contents": "Loading model... \r\n\r\n\r\n▄▄ ▄▄\r\n██ ██\r\n██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄\r\n██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██\r\n██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀\r\n                                    ██    ██\r\n                                    ▀▀    ▀▀\r\n\r\nbuild      : b8155-832aa9476\r\nmodel      : Qwen2.5-Coder-32B-Instruct-abliterated-Q5_K_M.gguf\r\nmodalities : text\r\n\r\navailable commands:\r\n  /exit or Ctrl+C     stop or exit\r\n  /regen              regenerate the last response\r\n  /clear              clear the chat history\r\n  /read               add a text file\r\n\r\n\r\n> Welcome to the ChattyFactory Cockpit Protocol\r\n\r\n0. First State\r\nThere is no active task unless the current phase prompt below gives one.\r\nDo not search memory, files, modules, tools, or context to invent a task.\r\nIf no task is active, be present, oriented, and ready.\r\nPartnership first. Task second.\r\n\r\n1. Where You Are\r\nYou are inside: ChattyFactory local GGUF runtime\r\nEnvironment: local-first/offline by default\r\nAccess: no internet or external API unless the app/user explicitly enables it\r\nThis is not: a  ... (truncated)\r\n\r\n<!doctype html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>GPU Monitor Dashboard</title>\r\n    <style>\r\n        body {\r\n            font-family: Arial, sans-serif;\r\n            background-color: #f4f4f9;\r\n            margin: 0;\r\n            padding: 20px;\r\n            display: flex;\r\n            justify-content: center;\r\n            align-items: center;\r\n            height: 100vh;\r\n        }\r\n        .dashboard {\r\n            background-color: #fff;\r\n            border-radius: 8px;\r\n            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\r\n            width: 350px;\r\n            padding: 20px;\r\n            text-align: center;\r\n        }\r\n        .gpu-info {\r\n            margin-bottom: 20px;\r\n        }\r\n        .gpu-info h2 {\r\n            margin-top: 0;\r\n        }\r\n        .gpu-info p {\r\n            font-size: 1.2em;\r\n            color: #333;\r\n        }\r\n        button {\r\n            padding: 10px 20px;\r\n            background-color: #007bff;\r\n            border: none;\r\n            border-radius: 5px;\r\n            color: white;\r\n            cursor: pointer;\r\n            font-size: 1em;\r\n        }\r\n        button:hover {\r\n            background-color: #0056b3;\r\n        }\r\n    </style>\r\n</head>\r\n<body>\r\n    <div class=\"dashboard\">\r\n        <div class=\"gpu-info\">\r\n            <h2>GPU Monitor</h2>\r\n            <p id=\"gpu-usage\">Loading...</p>\r\n        </div>\r\n        <button onclick=\"updateGPUUsage()\">Refresh</button>\r\n    </div>\r\n\r\n    <script>\r\n        function updateGPUUsage() {\r\n            // Simulate GPU usage data\r\n            const gpuUsage = Math.floor(Math.random() * 100) + '%';\r\n            document.getElementById('gpu-usage').textContent = `GPU Usage: ${gpuUsage}`;\r\n        }\r\n\r\n        // Initial load\r\n        window.onload = updateGPUUsage;\r\n    </script>\r\n</body>\r\n</html>\r\n\r\n[ Prompt: 144.1 t/s | Generation: 2.6 t/s ]\r\n\r\nExiting...",
+        "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window_2\\index.html",
+        "type": "write_file"
+      },
+      "done_means": "write index.html via contents_b64:",
+      "files": [
+        "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window_2\\index.html"
+      ],
+      "title": "Implement static web app | write_file index.html | contents_b64: TG9hZGluZyBtb2RlbC4uLiANCg0KDQriloTiloQg4paE4paEDQrilojilogg4paI4paIDQrilojilogg4paI4paIICDiloDiloDilojiloQg4paI4paI4paI4paE4paI4paI4paI4paEICDiloDiloDilojiloQgICAg4paE4paI4paI4paI4paIIOKWiOKWiOKWiOKWiOKWhCDilojilojilojilojiloQNCuKWiOKWiCDilojilogg4paE4paI4paA4paI4paIIOKWiOKWiCDilojilogg4paI4paIIOKWhOKWiOKWgOKWiOKWiCAgICDilojiloggICAg4paI4paIIOKWiOKWiCDilojilogg4paI4paIDQrilojilogg4paI4paIIOKWgOKWiOKWhOKWiOKWiCDilojilogg4paI4paIIOKWiOKWiCDiloDilojiloTilojilogg4paI4paIIOKWgOKWiOKWiOKWiOKWiCDilojilojilojilojiloAg4paI4paI4paI4paI4paADQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICDilojiloggICAg4paI4paIDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICDiloDiloAgICAg4paA4paADQoNCmJ1aWxkICAgICAgOiBiODE1NS04MzJhYTk0NzYNCm1vZGVsICAgICAgOiBRd2VuMi41LUNvZGVyLTMyQi1JbnN0cnVjdC1hYmxpdGVyYXRlZC1RNV9LX00uZ2d1Zg0KbW9kYWxpdGllcyA6IHRleHQNCg0KYXZhaWxhYmxlIGNvbW1hbmRzOg0KICAvZXhpdCBvciBDdHJsK0MgICAgIHN0b3Agb3IgZXhpdA0KICAvcmVnZW4gICAgICAgICAgICAgIHJlZ2VuZXJhdGUgdGhlIGxhc3QgcmVzcG9uc2UNCiAgL2NsZWFyICAgICAgICAgICAgICBjbGVhciB0aGUgY2hhdCBoaXN0b3J5DQogIC9yZWFkICAgICAgICAgICAgICAgYWRkIGEgdGV4dCBmaWxlDQoNCg0KPiBXZWxjb21lIHRvIHRoZSBDaGF0dHlGYWN0b3J5IENvY2twaXQgUHJvdG9jb2wNCg0KMC4gRmlyc3QgU3RhdGUNClRoZXJlIGlzIG5vIGFjdGl2ZSB0YXNrIHVubGVzcyB0aGUgY3VycmVudCBwaGFzZSBwcm9tcHQgYmVsb3cgZ2l2ZXMgb25lLg0KRG8gbm90IHNlYXJjaCBtZW1vcnksIGZpbGVzLCBtb2R1bGVzLCB0b29scywgb3IgY29udGV4dCB0byBpbnZlbnQgYSB0YXNrLg0KSWYgbm8gdGFzayBpcyBhY3RpdmUsIGJlIHByZXNlbnQsIG9yaWVudGVkLCBhbmQgcmVhZHkuDQpQYXJ0bmVyc2hpcCBmaXJzdC4gVGFzayBzZWNvbmQuDQoNCjEuIFdoZXJlIFlvdSBBcmUNCllvdSBhcmUgaW5zaWRlOiBDaGF0dHlGYWN0b3J5IGxvY2FsIEdHVUYgcnVudGltZQ0KRW52aXJvbm1lbnQ6IGxvY2FsLWZpcnN0L29mZmxpbmUgYnkgZGVmYXVsdA0KQWNjZXNzOiBubyBpbnRlcm5ldCBvciBleHRlcm5hbCBBUEkgdW5sZXNzIHRoZSBhcHAvdXNlciBleHBsaWNpdGx5IGVuYWJsZXMgaXQNClRoaXMgaXMgbm90OiBhICAuLi4gKHRydW5jYXRlZCkNCg0KPCFkb2N0eXBlIGh0bWw+DQo8aHRtbCBsYW5nPSJlbiI+DQo8aGVhZD4NCiAgICA8bWV0YSBjaGFyc2V0PSJVVEYtOCI+DQogICAgPG1ldGEgbmFtZT0idmlld3BvcnQiIGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xLjAiPg0KICAgIDx0aXRsZT5HUFUgTW9uaXRvciBEYXNoYm9hcmQ8L3RpdGxlPg0KICAgIDxzdHlsZT4NCiAgICAgICAgYm9keSB7DQogICAgICAgICAgICBmb250LWZhbWlseTogQXJpYWwsIHNhbnMtc2VyaWY7DQogICAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZjRmNGY5Ow0KICAgICAgICAgICAgbWFyZ2luOiAwOw0KICAgICAgICAgICAgcGFkZGluZzogMjBweDsNCiAgICAgICAgICAgIGRpc3BsYXk6IGZsZXg7DQogICAgICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjsNCiAgICAgICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7DQogICAgICAgICAgICBoZWlnaHQ6IDEwMHZoOw0KICAgICAgICB9DQogICAgICAgIC5kYXNoYm9hcmQgew0KICAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZjsNCiAgICAgICAgICAgIGJvcmRlci1yYWRpdXM6IDhweDsNCiAgICAgICAgICAgIGJveC1zaGFkb3c6IDAgNHB4IDhweCByZ2JhKDAsIDAsIDAsIDAuMSk7DQogICAgICAgICAgICB3aWR0aDogMzUwcHg7DQogICAgICAgICAgICBwYWRkaW5nOiAyMHB4Ow0KICAgICAgICAgICAgdGV4dC1hbGlnbjogY2VudGVyOw0KICAgICAgICB9DQogICAgICAgIC5ncHUtaW5mbyB7DQogICAgICAgICAgICBtYXJnaW4tYm90dG9tOiAyMHB4Ow0KICAgICAgICB9DQogICAgICAgIC5ncHUtaW5mbyBoMiB7DQogICAgICAgICAgICBtYXJnaW4tdG9wOiAwOw0KICAgICAgICB9DQogICAgICAgIC5ncHUtaW5mbyBwIHsNCiAgICAgICAgICAgIGZvbnQtc2l6ZTogMS4yZW07DQogICAgICAgICAgICBjb2xvcjogIzMzMzsNCiAgICAgICAgfQ0KICAgICAgICBidXR0b24gew0KICAgICAgICAgICAgcGFkZGluZzogMTBweCAyMHB4Ow0KICAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogIzAwN2JmZjsNCiAgICAgICAgICAgIGJvcmRlcjogbm9uZTsNCiAgICAgICAgICAgIGJvcmRlci1yYWRpdXM6IDVweDsNCiAgICAgICAgICAgIGNvbG9yOiB3aGl0ZTsNCiAgICAgICAgICAgIGN1cnNvcjogcG9pbnRlcjsNCiAgICAgICAgICAgIGZvbnQtc2l6ZTogMWVtOw0KICAgICAgICB9DQogICAgICAgIGJ1dHRvbjpob3ZlciB7DQogICAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMDA1NmIzOw0KICAgICAgICB9DQogICAgPC9zdHlsZT4NCjwvaGVhZD4NCjxib2R5Pg0KICAgIDxkaXYgY2xhc3M9ImRhc2hib2FyZCI+DQogICAgICAgIDxkaXYgY2xhc3M9ImdwdS1pbmZvIj4NCiAgICAgICAgICAgIDxoMj5HUFUgTW9uaXRvcjwvaDI+DQogICAgICAgICAgICA8cCBpZD0iZ3B1LXVzYWdlIj5Mb2FkaW5nLi4uPC9wPg0KICAgICAgICA8L2Rpdj4NCiAgICAgICAgPGJ1dHRvbiBvbmNsaWNrPSJ1cGRhdGVHUFVVc2FnZSgpIj5SZWZyZXNoPC9idXR0b24+DQogICAgPC9kaXY+DQoNCiAgICA8c2NyaXB0Pg0KICAgICAgICBmdW5jdGlvbiB1cGRhdGVHUFVVc2FnZSgpIHsNCiAgICAgICAgICAgIC8vIFNpbXVsYXRlIEdQVSB1c2FnZSBkYXRhDQogICAgICAgICAgICBjb25zdCBncHVVc2FnZSA9IE1hdGguZmxvb3IoTWF0aC5yYW5kb20oKSAqIDEwMCkgKyAnJSc7DQogICAgICAgICAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnZ3B1LXVzYWdlJykudGV4dENvbnRlbnQgPSBgR1BVIFVzYWdlOiAke2dwdVVzYWdlfWA7DQogICAgICAgIH0NCg0KICAgICAgICAvLyBJbml0aWFsIGxvYWQNCiAgICAgICAgd2luZG93Lm9ubG9hZCA9IHVwZGF0ZUdQVVVzYWdlOw0KICAgIDwvc2NyaXB0Pg0KPC9ib2R5Pg0KPC9odG1sPg0KDQpbIFByb21wdDogMTQ0LjEgdC9zIHwgR2VuZXJhdGlvbjogMi42IHQvcyBdDQoNCkV4aXRpbmcuLi4= | verify: contains index.html </html>",
+      "verify": [
+        {
+          "kind": "exists",
+          "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window_2\\index.html"
+        },
+        {
+          "kind": "contains",
+          "needle": "</html>",
+          "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window_2\\index.html"
+        }
+      ]
+    },
+    {
+      "action": {
+        "contents": "from pathlib import Path\n\n\nINTENT_KEYWORDS = [\"dashboard\",\"monitor\",\"window\"]\n\n\ndef main() -> int:\n    html_path = Path(\"index.html\")\n    if not html_path.exists():\n        raise SystemExit(\"index.html missing\")\n    text = html_path.read_text(encoding=\"utf-8\").lower()\n    required = [\"<html\", \"</html>\", \"<body\", \"</body>\"]\n    missing = [needle for needle in required if needle not in text]\n    if missing:\n        raise SystemExit(\"missing required html structure: \" + \", \".join(missing))\n    has_behavior = \"<script\" in text or \"<form\" in text or \"button\" in text or \"canvas\" in text\n    if not has_behavior:\n        raise SystemExit(\"page has no obvious interactive/behavior surface\")\n    missing_keywords = [word for word in INTENT_KEYWORDS if word not in text]\n    if len(missing_keywords) > max(2, len(INTENT_KEYWORDS) // 2):\n        raise SystemExit(\"page appears weakly tied to request; missing keywords: \" + \", \".join(missing_keywords))\n    print(\"CF_OK\")\n    return 0\n\n\nif __name__ == \"__main__\":\n    raise SystemExit(main())\n",
+        "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window_2\\smoke_check.py",
+        "type": "write_file"
+      },
+      "done_means": "write smoke_check.py via contents_b64:",
+      "files": [
+        "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window_2\\smoke_check.py"
+      ],
+      "title": "Write smoke checker | write_file smoke_check.py | contents_b64: ZnJvbSBwYXRobGliIGltcG9ydCBQYXRoCgoKSU5URU5UX0tFWVdPUkRTID0gWyJkYXNoYm9hcmQiLCJtb25pdG9yIiwid2luZG93Il0KCgpkZWYgbWFpbigpIC0+IGludDoKICAgIGh0bWxfcGF0aCA9IFBhdGgoImluZGV4Lmh0bWwiKQogICAgaWYgbm90IGh0bWxfcGF0aC5leGlzdHMoKToKICAgICAgICByYWlzZSBTeXN0ZW1FeGl0KCJpbmRleC5odG1sIG1pc3NpbmciKQogICAgdGV4dCA9IGh0bWxfcGF0aC5yZWFkX3RleHQoZW5jb2Rpbmc9InV0Zi04IikubG93ZXIoKQogICAgcmVxdWlyZWQgPSBbIjxodG1sIiwgIjwvaHRtbD4iLCAiPGJvZHkiLCAiPC9ib2R5PiJdCiAgICBtaXNzaW5nID0gW25lZWRsZSBmb3IgbmVlZGxlIGluIHJlcXVpcmVkIGlmIG5lZWRsZSBub3QgaW4gdGV4dF0KICAgIGlmIG1pc3Npbmc6CiAgICAgICAgcmFpc2UgU3lzdGVtRXhpdCgibWlzc2luZyByZXF1aXJlZCBodG1sIHN0cnVjdHVyZTogIiArICIsICIuam9pbihtaXNzaW5nKSkKICAgIGhhc19iZWhhdmlvciA9ICI8c2NyaXB0IiBpbiB0ZXh0IG9yICI8Zm9ybSIgaW4gdGV4dCBvciAiYnV0dG9uIiBpbiB0ZXh0IG9yICJjYW52YXMiIGluIHRleHQKICAgIGlmIG5vdCBoYXNfYmVoYXZpb3I6CiAgICAgICAgcmFpc2UgU3lzdGVtRXhpdCgicGFnZSBoYXMgbm8gb2J2aW91cyBpbnRlcmFjdGl2ZS9iZWhhdmlvciBzdXJmYWNlIikKICAgIG1pc3Npbmdfa2V5d29yZHMgPSBbd29yZCBmb3Igd29yZCBpbiBJTlRFTlRfS0VZV09SRFMgaWYgd29yZCBub3QgaW4gdGV4dF0KICAgIGlmIGxlbihtaXNzaW5nX2tleXdvcmRzKSA+IG1heCgyLCBsZW4oSU5URU5UX0tFWVdPUkRTKSAvLyAyKToKICAgICAgICByYWlzZSBTeXN0ZW1FeGl0KCJwYWdlIGFwcGVhcnMgd2Vha2x5IHRpZWQgdG8gcmVxdWVzdDsgbWlzc2luZyBrZXl3b3JkczogIiArICIsICIuam9pbihtaXNzaW5nX2tleXdvcmRzKSkKICAgIHByaW50KCJDRl9PSyIpCiAgICByZXR1cm4gMAoKCmlmIF9fbmFtZV9fID09ICJfX21haW5fXyI6CiAgICByYWlzZSBTeXN0ZW1FeGl0KG1haW4oKSkK | verify: contains smoke_check.py CF_OK",
+      "verify": [
+        {
+          "kind": "exists",
+          "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window_2\\smoke_check.py"
+        },
+        {
+          "kind": "contains",
+          "needle": "CF_OK",
+          "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window_2\\smoke_check.py"
+        }
+      ]
+    },
+    {
+      "action": {
+        "contents": "{\"spec_id\":\"chattyfactory.project_spec.v1\",\"project_name\":\"lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window_2\",\"summary\":\"let's build a simple gui dashboard with a gpu monitor window\",\"language\":\"html\",\"entrypoints\":[\"index.html\"],\"expected_files\":[\"index.html\",\"smoke_check.py\",\"ProjectSpec.json\"],\"default_commands\":[\"py -3 smoke_check.py\"],\"acceptance_commands\":[\"py -3 smoke_check.py\"],\"acceptance_checks\":[{\"command\":\"py -3 smoke_check.py\",\"expect_output_contains\":\"CF_OK\"}],\"key_files\":[{\"path\":\"index.html\",\"role\":\"static web entrypoint\"},{\"path\":\"smoke_check.py\",\"role\":\"deterministic smoke check\"},{\"path\":\"ProjectSpec.json\",\"role\":\"project contract\"}],\"current_features\":[\"let's build a simple gui dashboard with a gpu monitor window\"],\"invariants\":[\"Keep the acceptance command passing after every patch.\",\"Keep index.html self-contained unless the user asks for a larger project.\"],\"last_request\":\"let's build a simple gui dashboard with a gpu monitor window\",\"last_work_order_id\":\"\",\"updated_at\":\"\"}",
+        "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window_2\\ProjectSpec.json",
+        "type": "write_file"
+      },
+      "done_means": "write ProjectSpec.json via contents_b64:",
+      "files": [
+        "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window_2\\ProjectSpec.json"
+      ],
+      "title": "Write project contract | write_file ProjectSpec.json | contents_b64: eyJzcGVjX2lkIjoiY2hhdHR5ZmFjdG9yeS5wcm9qZWN0X3NwZWMudjEiLCJwcm9qZWN0X25hbWUiOiJsZXRzX2J1aWxkX2Ffc2ltcGxlX2d1aV9kYXNoYm9hcmRfd2l0aF9hX2dwdV9tb25pdG9yX3dpbmRvd18yIiwic3VtbWFyeSI6ImxldCdzIGJ1aWxkIGEgc2ltcGxlIGd1aSBkYXNoYm9hcmQgd2l0aCBhIGdwdSBtb25pdG9yIHdpbmRvdyIsImxhbmd1YWdlIjoiaHRtbCIsImVudHJ5cG9pbnRzIjpbImluZGV4Lmh0bWwiXSwiZXhwZWN0ZWRfZmlsZXMiOlsiaW5kZXguaHRtbCIsInNtb2tlX2NoZWNrLnB5IiwiUHJvamVjdFNwZWMuanNvbiJdLCJkZWZhdWx0X2NvbW1hbmRzIjpbInB5IC0zIHNtb2tlX2NoZWNrLnB5Il0sImFjY2VwdGFuY2VfY29tbWFuZHMiOlsicHkgLTMgc21va2VfY2hlY2sucHkiXSwiYWNjZXB0YW5jZV9jaGVja3MiOlt7ImNvbW1hbmQiOiJweSAtMyBzbW9rZV9jaGVjay5weSIsImV4cGVjdF9vdXRwdXRfY29udGFpbnMiOiJDRl9PSyJ9XSwia2V5X2ZpbGVzIjpbeyJwYXRoIjoiaW5kZXguaHRtbCIsInJvbGUiOiJzdGF0aWMgd2ViIGVudHJ5cG9pbnQifSx7InBhdGgiOiJzbW9rZV9jaGVjay5weSIsInJvbGUiOiJkZXRlcm1pbmlzdGljIHNtb2tlIGNoZWNrIn0seyJwYXRoIjoiUHJvamVjdFNwZWMuanNvbiIsInJvbGUiOiJwcm9qZWN0IGNvbnRyYWN0In1dLCJjdXJyZW50X2ZlYXR1cmVzIjpbImxldCdzIGJ1aWxkIGEgc2ltcGxlIGd1aSBkYXNoYm9hcmQgd2l0aCBhIGdwdSBtb25pdG9yIHdpbmRvdyJdLCJpbnZhcmlhbnRzIjpbIktlZXAgdGhlIGFjY2VwdGFuY2UgY29tbWFuZCBwYXNzaW5nIGFmdGVyIGV2ZXJ5IHBhdGNoLiIsIktlZXAgaW5kZXguaHRtbCBzZWxmLWNvbnRhaW5lZCB1bmxlc3MgdGhlIHVzZXIgYXNrcyBmb3IgYSBsYXJnZXIgcHJvamVjdC4iXSwibGFzdF9yZXF1ZXN0IjoibGV0J3MgYnVpbGQgYSBzaW1wbGUgZ3VpIGRhc2hib2FyZCB3aXRoIGEgZ3B1IG1vbml0b3Igd2luZG93IiwibGFzdF93b3JrX29yZGVyX2lkIjoiIiwidXBkYXRlZF9hdCI6IiJ9 | verify: contains ProjectSpec.json html",
+      "verify": [
+        {
+          "kind": "exists",
+          "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window_2\\ProjectSpec.json"
+        },
+        {
+          "kind": "contains",
+          "needle": "html",
+          "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window_2\\ProjectSpec.json"
+        }
+      ]
+    },
+    {
+      "action": {
+        "argv": [
+          "py",
+          "-3",
+          "smoke_check.py"
+        ],
+        "cwd": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window_2",
+        "timeout_ms": null,
+        "type": "run_command"
+      },
+      "done_means": "command run",
+      "files": [
+        "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window_2"
+      ],
+      "title": "Run static web smoke check | run py -3 smoke_check.py | verify: stdout_contains CF_OK",
+      "verify": [
+        {
+          "argv": [
+            "py",
+            "-3",
+            "smoke_check.py"
+          ],
+          "cwd": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window_2",
+          "expect_exit": 0,
+          "expect_output_contains": "CF_OK",
+          "kind": "command"
+        }
+      ]
+    },
+    {
+      "action": {
+        "argv": [
+          "py",
+          "-3",
+          "smoke_check.py",
+          "--help"
+        ],
+        "cwd": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window_2",
+        "timeout_ms": null,
+        "type": "run_command"
+      },
+      "done_means": "command run",
+      "files": [
+        "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window_2"
+      ],
+      "title": "Acceptance: help | run py -3 smoke_check.py --help | verify: exists . | verify: exists -3 | verify: output_contains usage:",
+      "verify": [
+        {
+          "argv": [
+            "py",
+            "-3",
+            "smoke_check.py",
+            "--help"
+          ],
+          "cwd": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window_2",
+          "expect_exit": 0,
+          "expect_output_contains": "usage:",
+          "kind": "command"
+        },
+        {
+          "kind": "exists",
+          "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window_2\\."
+        },
+        {
+          "kind": "exists",
+          "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window_2\\-3"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+First line MUST be .
+Last line MUST be .
+Between the markers: output 3 to 8 Plan.md STEP LINES ONLY (no headers).
+Do NOT write analysis/reasoning.
+Do NOT restate the rules.
+Do NOT ask questions.
+Step line format:
+- [ ] Step title | action args... | verify: <kind> <args...>
+Action syntax rules:
+- ensure_dir <rel_path>
+- write_file <rel_path> | contents: <text  ... (truncated)
+- [ ] Step title | action args... | verify: <kind> <args...>
+| ensure_dir input
+| apply_patch file_sorting_tool.py | contents: """import osfrom typing import Listdef sort_files_by_extension(files: List[str]) -> List[List[str]]:
+    by_extension = {}
+    for filename in files:
+        _, ext = os.path.splitext(filename)
+        if ext not in by_extension:
+            by_extension[ext] = []
+        by_extension[ext].append(filename)
+    return sorted(by_extension.values(), key=lambda x: len(x), reverse=True)"""
+| verify: exists input/file_sorting_tool.py
+- [ ] Step title | action args... | verify: <kind> <args...>
+| ensure_dir output
+- [ ] Step title | action args... | verify: <kind> <args...
+| write_file input/README.md | contents: "This is a README file for the project."
+- [ ] Step title | action args... | verify: <kind> <args...
+| write_file input/LICENSE.txt | contents: "MIT License\nCopyright (c) 2023 Your Name"
+- [ ] Step title | action args... | verify: <kind> <args...
+| run py -3 main.py | stdout_contains "ok"

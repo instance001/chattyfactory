@@ -1,0 +1,1 @@
+step line missing action segment (expected '| action ... |'): '- [ ] Create a directory for the project'

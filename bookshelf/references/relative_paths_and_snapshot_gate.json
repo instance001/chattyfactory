@@ -1,0 +1,16 @@
+{
+  "title": "Relative paths + snapshot gate (memory jogger)",
+  "tags": [
+    "reference",
+    "paths",
+    "snapshot_gate",
+    "relative",
+    "windows",
+    "guardrails"
+  ],
+  "created_at": "2026-02-23T00:00:00Z",
+  "anchor": "reference",
+  "outcome": "Path confinement + snapshot gate rules to prevent hallucinated paths",
+  "work_order_id": "relative_paths_and_snapshot_gate",
+  "content_hash": "943584cfb1a284d73009d0c8be93023b34134a06"
+}

@@ -1,0 +1,19 @@
+{
+  "event_type": "suspend_rundown",
+  "module_id": "chattyfactory_module",
+  "payload": {
+    "active_project": null,
+    "builder_model": "C:\\Users\\User\\Desktop\\chattyfactorysyntaxsquashing\\chattyfactory\\models\\deepseek-coder-6.7b-instruct.Q4_K_M.gguf",
+    "overseer_model": "C:\\Users\\User\\Desktop\\chattyfactorysyntaxsquashing\\chattyfactory\\models\\deepseek-coder-6.7b-instruct.Q4_K_M.gguf",
+    "pipeline_state": "Idle",
+    "selected_model": "C:\\Users\\User\\Desktop\\chattyfactory\\models\\gpt-oss-20b-Q4_K_M.gguf",
+    "status": "Idle"
+  },
+  "snapshot": "# ChattyFactory Bridge Snapshot\n- Pipeline state: Idle\n- Active project: (none)\n- Selected model: C:\\Users\\User\\Desktop\\chattyfactory\\models\\gpt-oss-20b-Q4_K_M.gguf\n- Builder model: C:\\Users\\User\\Desktop\\chattyfactorysyntaxsquashing\\chattyfactory\\models\\deepseek-coder-6.7b-instruct.Q4_K_M.gguf\n- Overseer model: C:\\Users\\User\\Desktop\\chattyfactorysyntaxsquashing\\chattyfactory\\models\\deepseek-coder-6.7b-instruct.Q4_K_M.gguf\n- Status: Idle\n\n## Recent Chat Log\n\n\n## Current Plan.md\n",
+  "summary": "ChattyFactory is in Idle with active project none. Status: Idle. Next focus: enter a new request or open an output project.",
+  "tags": [
+    "chattyfactory",
+    "native_window",
+    "builder"
+  ]
+}

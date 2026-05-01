@@ -1,0 +1,31 @@
+{
+  "anchors": [
+    "scratch"
+  ],
+  "anchor_scores": [
+    [
+      "build_a_simple_python_based_file_sorter_input_folder_for_files_to_go_int",
+      198
+    ],
+    [
+      "build_a_simple_file_sorter_in_python_cli_input_folder_for_files_to_go_in",
+      188
+    ],
+    [
+      "build_a_simple_python_cli_file_sorter_input_folder_for_files_to_go_in_ou",
+      188
+    ]
+  ],
+  "log_tail": null,
+  "last_run_summary": "Completed wo21",
+  "failing_step": null,
+  "failing_error": null,
+  "work_order_id": null,
+  "recovery_attempts": 0,
+  "base_path": "C:\\Users\\User\\Desktop\\chattyfactorysyntaxsquashing\\chattyfactory",
+  "recent_logs": [
+    "System: Build complete wo21 outputs at C:\\Users\\User\\Desktop\\chattyfactorysyntaxsquashing\\chattyfactory\\runtime\\runs\\wo21",
+    "System: Step 3 complete - Run | run python main.py | verify: exists main.py",
+    "System: Step 3 start - Run | run python main.py | verify: exists main.py"
+  ]
+}

@@ -1,13 +1,52 @@
 {
   "split_orientation": "vertical",
-  "split_ratio": 0.23125,
-  "selected_model": "C:\\Users\\User\\Desktop\\chattyfactory\\models\\gpt-oss-20b-Q4_K_M.gguf",
-  "active_project": null,
+  "split_ratio": 0.2565167,
+  "selected_model": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\models\\Qwen2.5-Coder-32B-Instruct-abliterated-Q5_K_M.gguf",
+  "overseer_model": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\models\\Qwen2.5-Coder-32B-Instruct-abliterated-Q5_K_M.gguf",
+  "builder_model": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\models\\Qwen2.5-Coder-32B-Instruct-abliterated-Q5_K_M.gguf",
+  "active_project": "lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window",
   "output_root_override": null,
   "policy": {
     "allow_network": false,
     "allow_delete": false,
     "allow_external_paths": false
   },
-  "last_project_seed": null
+  "last_project_seed": null,
+  "sampling": {
+    "use_overrides": false,
+    "clarify": {
+      "temperature": 0.35,
+      "top_p": 0.9,
+      "top_k": null,
+      "repeat_penalty": 1.1,
+      "seed": null,
+      "max_tokens": 500
+    },
+    "planning": {
+      "temperature": 0.3,
+      "top_p": 0.9,
+      "top_k": null,
+      "repeat_penalty": 1.1,
+      "seed": null,
+      "max_tokens": 800
+    },
+    "plan_step": {
+      "temperature": 0.1,
+      "top_p": 0.85,
+      "top_k": null,
+      "repeat_penalty": 1.1,
+      "seed": null,
+      "max_tokens": 400
+    },
+    "recovery": {
+      "temperature": 0.15,
+      "top_p": 0.9,
+      "top_k": null,
+      "repeat_penalty": 1.1,
+      "seed": null,
+      "max_tokens": 900
+    }
+  },
+  "max_clarify_questions": 2,
+  "exoskeleton_target": "standalone"
 }

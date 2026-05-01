@@ -1,0 +1,1 @@
+each step must include at least one verify: clause (line: '- [ ] Create a directory for the project files | action args: mkdir -p /path/to/project/build_a_file_sorting_tool_6')

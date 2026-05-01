@@ -1,0 +1,15 @@
+{
+  "title": "Repair loop hygiene (memory jogger)",
+  "tags": [
+    "reference",
+    "repair",
+    "smoke",
+    "wrappers",
+    "sanitize"
+  ],
+  "created_at": "2026-02-23T00:00:00Z",
+  "anchor": "reference",
+  "outcome": "Keep repairs minimal; strip wrappers/prose; rewrite whole file when needed",
+  "work_order_id": "repair_loop_hygiene",
+  "content_hash": "9315b0ccb282d28caab10c85e36e0a330a37a343"
+}

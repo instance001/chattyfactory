@@ -1,0 +1,33 @@
+{
+  "anchors": [
+    "python_cli",
+    "egui_app",
+    "rust_cli"
+  ],
+  "anchor_scores": [
+    [
+      "build_a_simple_python_file_sorter_input_folder_for_files_to_be_dropped_i",
+      158
+    ],
+    [
+      "build_a_simple_file_sorter_input_in_folder_for_files_to_be_put_output_2",
+      148
+    ],
+    [
+      "build_a_simple_file_sorter_input_in_folder_for_files_to_be_put_output_fo",
+      148
+    ]
+  ],
+  "log_tail": "step 7: Acceptance: help | run py -3 main.py --help | verify: exists . | verify: exists ProjectSpec.json | verify: exists main.py | verify: output_contains usage:\nerror: command [\"py\", \"-3\", \"main.py\", \"--help\"] failed with code Some(1) (stdout=C:\\Users\\User\\Desktop\\chattyfactory\\runtime\\runs\\wo15\\step_7\\stdout.log, stderr=C:\\Users\\User\\Desktop\\chattyfactory\\runtime\\runs\\wo15\\step_7\\stderr.log)\n",
+  "last_run_summary": "Failed at step 8: verify command output missing usage: (stdout=C:\\Users\\User\\Desktop\\chattyfactory\\runtime\\runs\\wo15\\step_7\\verify_0_stdout.log, stderr=C:\\Users\\User\\Desktop\\chattyfactory\\runtime\\runs\\wo15\\step_7\\verify_0_stderr.log)",
+  "failing_step": 8,
+  "failing_error": "verify command output missing usage: (stdout=C:\\Users\\User\\Desktop\\chattyfactory\\runtime\\runs\\wo15\\step_7\\verify_0_stdout.log, stderr=C:\\Users\\User\\Desktop\\chattyfactory\\runtime\\runs\\wo15\\step_7\\verify_0_stderr.log)",
+  "work_order_id": null,
+  "recovery_attempts": 1,
+  "base_path": "C:\\Users\\User\\Desktop\\chattyfactory",
+  "recent_logs": [
+    "Log tail:\nstep 7: Acceptance: help | run py -3 main.py --help | verify: exists . | verify: exists ProjectSpec.json | verify: exists main.py | verify: output_contains usage:\nerror: command [\"py\", \"-3\", \"main.py\", \"--help\"] failed with code Some(1) (stdout=C:\\Users\\User\\Desktop\\chattyfactory\\runtime\\runs\\wo15\\step_7\\stdout.log, stderr=C:\\Users\\User\\Desktop\\chattyfactory\\runtime\\runs\\wo15\\step_7\\stderr.log)\n",
+    "System: Build wo15 failed at step 8: verify command output missing usage: (stdout=C:\\Users\\User\\Desktop\\chattyfactory\\runtime\\runs\\wo15\\step_7\\verify_0_stdout.log, stderr=C:\\Users\\User\\Desktop\\chattyfactory\\runtime\\runs\\wo15\\step_7\\verify_0_stderr.log)",
+    "System: Step 8 FAILED - Acceptance: help | run py -3 main.py --help | verify: exists . | verify: exists ProjectSpec.json | verify: exists main.py | verify: output_contains usage: (verify command output missing usage: (stdout=C:\\Users\\User\\Desktop\\chattyfactory\\runtime\\runs\\wo15\\step_7\\verify_0_stdout.log, stderr=C:\\Users\\User\\Desktop\\chattyfactory\\runtime\\runs\\wo15\\step_7\\verify_0_stderr.log)) log: C:\\Users\\User\\Desktop\\chattyfactory\\runtime\\runs\\wo15\\step_7\\step.log"
+  ]
+}

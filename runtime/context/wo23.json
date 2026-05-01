@@ -1,0 +1,31 @@
+{
+  "anchors": [
+    "scratch"
+  ],
+  "anchor_scores": [
+    [
+      "build_a_file_sorter_language_python_cli_input_folder_for_files_output_fo",
+      178
+    ],
+    [
+      "build_a_simple_python_based_file_sorter_input_folder_for_files_to_go_int",
+      168
+    ],
+    [
+      "build_a_simple_python_file_sorter_tool_input_folder_for_files_to_go_in_o",
+      168
+    ]
+  ],
+  "log_tail": "error: generated main.py looks like a stub (only prints ok/hi/hello); implement requested behavior and add a stronger acceptance check\n",
+  "last_run_summary": "Failed at step 4: generated main.py looks like a stub (only prints ok/hi/hello); implement requested behavior and add a stronger acceptance check",
+  "failing_step": 4,
+  "failing_error": "generated main.py looks like a stub (only prints ok/hi/hello); implement requested behavior and add a stronger acceptance check",
+  "work_order_id": null,
+  "recovery_attempts": 0,
+  "base_path": "C:\\Users\\User\\Desktop\\chattyfactorysyntaxsquashing\\chattyfactory",
+  "recent_logs": [
+    "Log tail:\nerror: generated main.py looks like a stub (only prints ok/hi/hello); implement requested behavior and add a stronger acceptance check\n",
+    "System: Build wo23 failed at step 4: generated main.py looks like a stub (only prints ok/hi/hello); implement requested behavior and add a stronger acceptance check",
+    "System: Step 4 FAILED - Placeholder gate (generated main.py looks like a stub (only prints ok/hi/hello); implement requested behavior and add a stronger acceptance check) log: C:\\Users\\User\\Desktop\\chattyfactorysyntaxsquashing\\chattyfactory\\runtime\\runs\\wo23\\placeholder_gate.log"
+  ]
+}

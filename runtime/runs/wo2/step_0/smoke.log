@@ -1,0 +1,5 @@
+post-step smoke checks
+work_order: wo2
+project_root: C:\Users\User\Desktop\chatty-modules\chattyfactory-module\output\new_project_Lets_build_a_basic_gui_dashboard_in_python
+spec_root: C:\Users\User\Desktop\chatty-modules\chattyfactory-module\output\new_project_Lets_build_a_basic_gui_dashboard_in_python
+note: no ProjectSpec.json in spec_root (skipping spec checks)

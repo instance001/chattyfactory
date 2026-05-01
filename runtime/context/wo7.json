@@ -1,0 +1,23 @@
+{
+  "anchors": [
+    "scratch"
+  ],
+  "anchor_scores": [
+    [
+      "scratch",
+      90
+    ]
+  ],
+  "log_tail": "step 5: Acceptance: help | run py -3 smoke_check.py --help | verify: exists . | verify: exists -3 | verify: output_contains usage:\nerror: verify exists failed: C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window\\-3\n",
+  "last_run_summary": "Failed at step 6: verify command output missing usage: (stdout=C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\runtime\\runs\\wo7\\step_5\\verify_0_stdout.log, stderr=C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\runtime\\runs\\wo7\\step_5\\verify_0_stderr.log)",
+  "failing_step": 6,
+  "failing_error": "verify command output missing usage: (stdout=C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\runtime\\runs\\wo7\\step_5\\verify_0_stdout.log, stderr=C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\runtime\\runs\\wo7\\step_5\\verify_0_stderr.log)",
+  "work_order_id": null,
+  "recovery_attempts": 0,
+  "base_path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module",
+  "recent_logs": [
+    "Log tail:\nstep 5: Acceptance: help | run py -3 smoke_check.py --help | verify: exists . | verify: exists -3 | verify: output_contains usage:\nerror: verify exists failed: C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window\\-3\n",
+    "System: Build wo7 failed at step 6: verify command output missing usage: (stdout=C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\runtime\\runs\\wo7\\step_5\\verify_0_stdout.log, stderr=C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\runtime\\runs\\wo7\\step_5\\verify_0_stderr.log)",
+    "System: Step 6 FAILED - Acceptance: help | run py -3 smoke_check.py --help | verify: exists . | verify: exists -3 | verify: output_contains usage: (verify command output missing usage: (stdout=C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\runtime\\runs\\wo7\\step_5\\verify_0_stdout.log, stderr=C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\runtime\\runs\\wo7\\step_5\\verify_0_stderr.log)) log: C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\runtime\\runs\\wo7\\step_5\\step.log"
+  ]
+}

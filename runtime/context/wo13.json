@@ -1,0 +1,33 @@
+{
+  "anchors": [
+    "python_cli",
+    "rust_cli",
+    "egui_app"
+  ],
+  "anchor_scores": [
+    [
+      "build_a_simple_file_sorter_input_in_folder_for_files_to_be_put_output_2",
+      168
+    ],
+    [
+      "build_a_simple_file_sorter_input_in_folder_for_files_to_be_put_output_fo",
+      168
+    ],
+    [
+      "build_a_simple_python_based_file_sorter_input_folder_for_files_to_go_int",
+      168
+    ]
+  ],
+  "log_tail": "step 7: Run command | run py -3 main.py --input input --output output | verify: glob_count output/*.txt 1\nerror: command [\"py\", \"-3\", \"main.py\", \"--input\", \"input\", \"--output\", \"output\"] failed with code Some(1) (stdout=C:\\Users\\User\\Desktop\\chattyfactory\\runtime\\runs\\wo13\\step_7\\stdout.log, stderr=C:\\Users\\User\\Desktop\\chattyfactory\\runtime\\runs\\wo13\\step_7\\stderr.log)\n",
+  "last_run_summary": "Failed at step 8: command [\"py\", \"-3\", \"main.py\", \"--input\", \"input\", \"--output\", \"output\"] failed with code Some(1) (stdout=C:\\Users\\User\\Desktop\\chattyfactory\\runtime\\runs\\wo13\\step_7\\stdout.log, stderr=C:\\Users\\User\\Desktop\\chattyfactory\\runtime\\runs\\wo13\\step_7\\stderr.log)",
+  "failing_step": 8,
+  "failing_error": "command [\"py\", \"-3\", \"main.py\", \"--input\", \"input\", \"--output\", \"output\"] failed with code Some(1) (stdout=C:\\Users\\User\\Desktop\\chattyfactory\\runtime\\runs\\wo13\\step_7\\stdout.log, stderr=C:\\Users\\User\\Desktop\\chattyfactory\\runtime\\runs\\wo13\\step_7\\stderr.log)",
+  "work_order_id": null,
+  "recovery_attempts": 0,
+  "base_path": "C:\\Users\\User\\Desktop\\chattyfactory",
+  "recent_logs": [
+    "Log tail:\nstep 7: Run command | run py -3 main.py --input input --output output | verify: glob_count output/*.txt 1\nerror: command [\"py\", \"-3\", \"main.py\", \"--input\", \"input\", \"--output\", \"output\"] failed with code Some(1) (stdout=C:\\Users\\User\\Desktop\\chattyfactory\\runtime\\runs\\wo13\\step_7\\stdout.log, stderr=C:\\Users\\User\\Desktop\\chattyfactory\\runtime\\runs\\wo13\\step_7\\stderr.log)\n",
+    "System: Build wo13 failed at step 8: command [\"py\", \"-3\", \"main.py\", \"--input\", \"input\", \"--output\", \"output\"] failed with code Some(1) (stdout=C:\\Users\\User\\Desktop\\chattyfactory\\runtime\\runs\\wo13\\step_7\\stdout.log, stderr=C:\\Users\\User\\Desktop\\chattyfactory\\runtime\\runs\\wo13\\step_7\\stderr.log)",
+    "System: Step 8 FAILED - Run command | run py -3 main.py --input input --output output | verify: glob_count output/*.txt 1 (command [\"py\", \"-3\", \"main.py\", \"--input\", \"input\", \"--output\", \"output\"] failed with code Some(1) (stdout=C:\\Users\\User\\Desktop\\chattyfactory\\runtime\\runs\\wo13\\step_7\\stdout.log, stderr=C:\\Users\\User\\Desktop\\chattyfactory\\runtime\\runs\\wo13\\step_7\\stderr.log)) log: C:\\Users\\User\\Desktop\\chattyfactory\\runtime\\runs\\wo13\\step_7\\step.log"
+  ]
+}

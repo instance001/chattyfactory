@@ -1,0 +1,105 @@
+You are ChattyFactory recovery assistant.
+OUTPUT CONTRACT (HARD):
+- TEXT ONLY.
+- First line MUST be .
+- Last line MUST be .
+- Between markers: output 3 to 8 Plan.md STEP LINES ONLY (no headers, no questions, no narration).
+- NO prose, NO markdown, NO code fences, NO backticks.
+Step line format:
+- [ ] <step title> | <action ...> | verify: <kind> <args...>
+Allowed actions:
+- ensure_dir <rel_dir>
+- write_file <rel_path> | contents: <text (u ... (truncated)
+- [ ] ensure_dir build_a_file_sorting_tool_6/src
+- [ ] write_file build_a_file_sorting_tool_6/src/main.py | contents: """
+from typing import *
+from dataclasses import dataclass
+import os
+@dataclass
+class File:
+    name: str
+    size: int
+def sort_files(files: List[File]):
+    sorted_files = sorted(files, key=lambda f: f.size)
+    return sorted_files
+if __name__ == "__main__":
+    files = [
+        File(name="file1.txt", size=1024),
+        File(name="file2.txt", size=2048),
+        File(name="file3.txt", size=512),
+    sorted_files = sort_files(files)
+    for file in sorted_files:
+        print(file.name, file.size)
+- [ ] ensure_dir build_a_file_sorting_tool_6/src/utils
+- [ ] write_file build_a_file_sorting_tool_6/src/utils/file_size.py | contents: """
+from typing import *
+from dataclasses import dataclass
+@dataclass
+class FileSize:
+    name: str
+    size: int
+def get_file_sizes(files: List[File]):
+    file_sizes = {}
+    for file in files:
+        if file.name not in file_sizes:
+            file_sizes[file.name] = file.size
+    return file_sizes
+if __name__ == "__main__":
+    files = [
+        File(name="file1.txt", size=1024),
+        File(name="file2.txt", size=2048),
+        File(name="file3.txt", size=512),
+    file_sizes = get_file_sizes(files)
+    for file in file_sizes:
+        print(file.name, file.size)
+- [ ] ensure_dir build_a_file_sorting_tool_6/src/utils/validators
+- [ ] write_file build_a_file_sorting_tool_6/src/utils/validators/file_validator.py | contents: """
+from typing import *
+from dataclasses import dataclass
+@dataclass
+class FileValidator:
+    name: str
+    size: int
+def validate_file(file: File):
+    if file.size < 1024:
+        raise ValueError("File size must be at least 1024 bytes")
+    return True
+if __name__ == "__main__":
+    files = [
+        File(name="file1.txt", size=1024),
+        File(name="file2.txt", size=2048),
+        File(name="file3.txt", size=512),
+    for file in files:
+        validate_file(file)
+- [ ] ensure_dir build_a_file_sorting_tool_6/src/utils/validators/validators
+- [ ] write_file build_a_file_sorting_tool_6/src/utils/validators/validators/__init__.py | contents: """
+from .file_validator import FileValidator
+- [ ] apply_patch build_a_file_sorting_tool_6/src/main.py | patch: """
+diff --git a/src/main.py b/src/main.py
+index 8b0e1a5..9c7d9c4 100644
+--- a/src/main.py
++++ b/src/main.py
+@@ -1,6 +1,6 @@
+ from typing import *
+-from dataclasses import dataclass
++from dataclasses import dataclass, field
+ import os
+ @dataclass
+@@ -8,7 +8,7 @@ import os
+ if __name__ == "__main__":
+     files = [
+-        File(name="file1.txt", size=1024),
++        File(name="file1.txt", size=1024), File(name="file2.txt", size=2048), File(name="file3.txt", size=512),
+     sorted_files = sort_files(files)
+     for file in sorted_files:
+@@ -16,7 +16,7 @@ if __name__ == "__main__":
+         print(file.name, file.size)
+- [ ] apply_patch build_a_file_sorting_tool_6/src/utils/file_size.py | patch: """
+diff --git a/src/utils/file_size.py b/src/utils/file_size.py
+index 8b0e1a5..9c
+
+! grounding_gate_errors:
+- verify references unknown path: build_a_file_sorting_tool_6/src
+- verify references unknown path: build_a_file_sorting_tool_6/src/utils
+- verify references unknown path: build_a_file_sorting_tool_6/src/utils/validators
+- verify references unknown path: build_a_file_sorting_tool_6/src/utils/validators/validators

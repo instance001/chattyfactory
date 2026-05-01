@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "id": "action_args_mkdir_p_to_ensure_dir",
+      "kind": "action",
+      "pattern": "^action args:\\s*mkdir\\s+-p\\s+(.+)$",
+      "replace": "ensure_dir $1",
+      "safety": "safe",
+      "notes": "Convert action args mkdir -p to ensure_dir"
+    },
+    {
+      "id": "action_args_mkdir_to_ensure_dir",
+      "kind": "action",
+      "pattern": "^action args:\\s*mkdir\\s+(.+)$",
+      "replace": "ensure_dir $1",
+      "safety": "safe",
+      "notes": "Convert action args mkdir to ensure_dir"
+    },
+    {
+      "id": "plain_mkdir_p_to_ensure_dir",
+      "kind": "action",
+      "pattern": "^mkdir\\s+-p\\s+(.+)$",
+      "replace": "ensure_dir $1",
+      "safety": "safe",
+      "notes": "Convert mkdir -p to ensure_dir"
+    },
+    {
+      "id": "plain_mkdir_to_ensure_dir",
+      "kind": "action",
+      "pattern": "^mkdir\\s+(.+)$",
+      "replace": "ensure_dir $1",
+      "safety": "safe",
+      "notes": "Convert mkdir to ensure_dir"
+    },
+    {
+      "id": "verify_exists_spacing",
+      "kind": "verify",
+      "pattern": "^verify\\s+exists\\s+(.+)$",
+      "replace": "verify: exists $1",
+      "safety": "safe",
+      "notes": "Normalize verify exists syntax"
+    },
+    {
+      "id": "verify_equals_syntax",
+      "kind": "verify",
+      "pattern": "^verify\\s*=\\s*exists\\s+(.+)$",
+      "replace": "verify: exists $1",
+      "safety": "safe",
+      "notes": "Normalize verify=exists syntax"
+    },
+    {
+      "id": "verify_colon_spacing",
+      "kind": "verify",
+      "pattern": "^verify\\s*:\\s*(.+)$",
+      "replace": "verify: $1",
+      "safety": "safe",
+      "notes": "Normalize verify colon spacing"
+    },
+    {
+      "id": "collapse_double_pipe",
+      "kind": "delimiter",
+      "pattern": "\\|\\|+",
+      "replace": "|",
+      "safety": "safe",
+      "notes": "Collapse repeated pipes"
+    },
+    {
+      "id": "normalize_pipe_spacing",
+      "kind": "delimiter",
+      "pattern": "\\s*\\|\\s*",
+      "replace": " | ",
+      "safety": "safe",
+      "notes": "Normalize pipe spacing"
+    },
+    {
+      "id": "windows_slash_to_forward",
+      "kind": "path",
+      "pattern": "\\\\",
+      "replace": "/",
+      "safety": "safe",
+      "notes": "Normalize Windows path separators"
+    }
+  ]
+}

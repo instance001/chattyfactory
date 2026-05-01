@@ -1,0 +1,1 @@
+step line missing action segment (expected '| action ... |'): '- [ ] Install Python and pip if not already installed.'

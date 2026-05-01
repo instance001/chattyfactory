@@ -1,0 +1,6 @@
+post-step smoke checks
+work_order: wo3
+project_root: C:\Users\User\Desktop\chatty-modules\chattyfactory-module\output\new_project_Lets_build_a_basic_gui_dashboard_in_python
+spec_root: C:\Users\User\Desktop\chatty-modules\chattyfactory-module\output\new_project_Lets_build_a_basic_gui_dashboard_in_python
+project_spec.spec_id: chattyfactory.project_spec.v1
+project_spec.language: python

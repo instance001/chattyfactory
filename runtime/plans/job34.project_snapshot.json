@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "created_at_utc": "unix:1777590964",
+  "os": "windows",
+  "root": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output",
+  "label": "scratch",
+  "tree": [
+    {
+      "path": "manuals/",
+      "kind": "dir",
+      "size_bytes": null
+    },
+    {
+      "path": "manuals/source/",
+      "kind": "dir",
+      "size_bytes": null
+    }
+  ],
+  "known_files": [],
+  "known_dirs": [
+    "manuals",
+    "manuals/source"
+  ],
+  "build": {
+    "language": "unknown",
+    "build_system": "",
+    "entrypoints": [],
+    "run_hints": [],
+    "dependencies": [],
+    "notes": [
+      "Could not detect build system (no Cargo.toml/pyproject.toml/package.json found)."
+    ]
+  },
+  "hot_words": [],
+  "excerpts": []
+}

@@ -1,0 +1,23 @@
+- [ ] ensure_dir scratch/Project
+- [ ] write_file scratch/Project/main.py | contents: """
+import os
+
+def sort_files_by_type(directory):
+    for root, dirs, files in os.walk(directory):
+        for file in files:
+            if file.endswith('.txt'):
+                os.rename(os.path.join(root, file), os.path.join(root, 'text.txt'))
+            elif file.endswith('.jpg'):
+                os.rename(os.path.join(root, file), os.path.join(root, 'image.jpg'))
+
+sort_files_by_type('path/to/directory')
+"""
+- [ ] apply_patch scratch/Project/main.py | patch: """
+diff --git a/main.py b/main.py
+--- a/main.py
++++ b/main.py
+@@ -1 +1 @@\nimport os\n\ndef sort_files_by_type(directory):\n    for root, dirs, files in os.walk(directory):\n        for file in files:\n            if file.endswith('.txt'): \n                os.rename(os.path.join(root, file), os.path.join(root, 'text.txt'))\n            elif file.endswith('.jpg'): \n                os.rename(os.path.join(root, file), os.path.join(root, 'image.jpg'))\n\nsort_files_by_type('path/to/directory')\n
+"""
+
+! grounding_gate_errors:
+- verify references unknown path: scratch/Project

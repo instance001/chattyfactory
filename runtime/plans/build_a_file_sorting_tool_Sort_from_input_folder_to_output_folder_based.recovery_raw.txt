@@ -1,0 +1,14 @@
+First line MUST be .
+Last line MUST be .
+Between the markers: output 3 to 8 Plan.md STEP LINES ONLY (no headers).
+Do NOT write analysis/reasoning.
+Do NOT restate the rules.
+Do NOT ask questions.
+Step line format:
+- [ ] Step title | action args... | verify: <kind> <args...>
+Action syntax rules:
+- ensure_dir <rel_path>
+- write_file <rel_path> | contents: <text  ... (truncated)
+- [ ] Step 1 | ensure_dir input | verify: dir_exists input
+- [ ] Step 2 | apply_patch bin_type_1.patch | patch: <unified diff hunk>
+- [ ] Step 3 | apply_patch bin_type_2.patch | patch: <unified diff hunk>

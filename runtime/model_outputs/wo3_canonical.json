@@ -1,0 +1,92 @@
+{
+  "metadata": {
+    "created_at": "2026-04-23T23:14:12.778483200+00:00",
+    "id": "wo3",
+    "title": "let's fix this basic gui dashboard in python"
+  },
+  "plan_receipt_hash": "34d8b0af5932dfaf27214c6e6de896da82ce00ee0608c4f1a08b939dab71eb30",
+  "policy": {
+    "allow_delete": false,
+    "allow_external_paths": false,
+    "allow_network": false
+  },
+  "steps": [
+    {
+      "action": {
+        "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\.",
+        "type": "ensure_dir"
+      },
+      "done_means": "dir .",
+      "files": [
+        "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\."
+      ],
+      "title": "Check project contract | ensure_dir . | verify: contains ProjectSpec.json chattyfactory.project_spec.v1",
+      "verify": [
+        {
+          "kind": "dir_exists",
+          "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\."
+        },
+        {
+          "kind": "contains",
+          "needle": "chattyfactory.project_spec.v1",
+          "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\ProjectSpec.json"
+        }
+      ]
+    },
+    {
+      "action": {
+        "patch": "\ndef load_metrics(path: str) -> list[Metric]:\n    with open(path, 'r') as f:\n        data = json.load(f)\n    return [Metric(**item) for item in data]\n",
+        "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\main.py",
+        "type": "apply_patch"
+      },
+      "done_means": "patch main.py",
+      "files": [
+        "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\main.py"
+      ],
+      "title": "Fix syntax error in main.py | apply_patch main.py | patch: \\ndef load_metrics(path: str) -> list[Metric]:\\n    with open(path, 'r') as f:\\n        data = json.load(f)\\n    return [Metric(**item) for item in data]\\n | verify: contains main.py def load_metrics",
+      "verify": [
+        {
+          "kind": "exists",
+          "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\main.py"
+        },
+        {
+          "kind": "contains",
+          "needle": "def load_metrics",
+          "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\main.py"
+        }
+      ]
+    },
+    {
+      "action": {
+        "argv": [
+          "py",
+          "-3",
+          "main.py",
+          "--self-test"
+        ],
+        "cwd": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python",
+        "timeout_ms": null,
+        "type": "run_command"
+      },
+      "done_means": "command run",
+      "files": [
+        "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python"
+      ],
+      "title": "Run saved acceptance | run py -3 main.py --self-test | verify: stdout_contains CF_OK",
+      "verify": [
+        {
+          "argv": [
+            "py",
+            "-3",
+            "main.py",
+            "--self-test"
+          ],
+          "cwd": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python",
+          "expect_exit": 0,
+          "expect_output_contains": "CF_OK",
+          "kind": "command"
+        }
+      ]
+    }
+  ]
+}

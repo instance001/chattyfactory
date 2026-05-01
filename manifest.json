@@ -1,0 +1,7 @@
+{
+  "module_id": "chattyfactory",
+  "display_name": "ChattyFactory",
+  "icon": "factory",
+  "description": "Local-first cognitive prosthetic for turning plain-English requests into strict, auditable plans and executing them with verification."
+}
+

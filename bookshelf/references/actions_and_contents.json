@@ -1,0 +1,17 @@
+{
+  "title": "Actions + contents rules (memory jogger)",
+  "tags": [
+    "reference",
+    "actions",
+    "write_file",
+    "apply_patch",
+    "ensure_dir",
+    "run",
+    "contents"
+  ],
+  "created_at": "2026-02-23T00:00:00Z",
+  "anchor": "reference",
+  "outcome": "Allowed actions + deterministic content/patch rules (no wrappers/stubs)",
+  "work_order_id": "actions_and_contents",
+  "content_hash": "0075744ddf909a94afac79485e278df9fd9dc526"
+}

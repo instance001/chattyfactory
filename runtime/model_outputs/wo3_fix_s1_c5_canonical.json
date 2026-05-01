@@ -1,0 +1,147 @@
+{
+  "metadata": {
+    "created_at": "2026-04-23T23:28:29.353212600+00:00",
+    "id": "wo3_fix_s1_c5",
+    "title": "Build repair: step 1 (Check project contract | ensure_dir . | verify: contains ProjectSpec.json chattyfactory.project_spec.v1)"
+  },
+  "plan_receipt_hash": "3369f84348856c6c1339013775b69dedc0f0dd74c8709757ebec8151d74d891b",
+  "policy": {
+    "allow_delete": false,
+    "allow_external_paths": false,
+    "allow_network": false
+  },
+  "steps": [
+    {
+      "action": {
+        "patch": "@@ -34,1 +34,2 @@",
+        "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\main.py",
+        "type": "apply_patch"
+      },
+      "done_means": "patch main.py",
+      "files": [
+        "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\main.py"
+      ],
+      "title": "Fix syntax error in main.py | apply_patch main.py | patch: @@ -34,1 +34,2 @@ | verify: exists .",
+      "verify": [
+        {
+          "kind": "exists",
+          "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\main.py"
+        },
+        {
+          "kind": "exists",
+          "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\."
+        }
+      ]
+    },
+    {
+      "action": {
+        "contents": "from typing import List",
+        "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\main.py",
+        "type": "write_file"
+      },
+      "done_means": "write main.py",
+      "files": [
+        "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\main.py"
+      ],
+      "title": "Ensure necessary imports are present | write_file main.py | contents: from typing import List | verify: exists .",
+      "verify": [
+        {
+          "kind": "exists",
+          "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\main.py"
+        },
+        {
+          "kind": "exists",
+          "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\."
+        }
+      ]
+    },
+    {
+      "action": {
+        "patch": "@@ -40,1 +40,2 @@",
+        "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\main.py",
+        "type": "apply_patch"
+      },
+      "done_means": "patch main.py",
+      "files": [
+        "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\main.py"
+      ],
+      "title": "Add missing return statement in load_metrics | apply_patch main.py | patch: @@ -40,1 +40,2 @@ | verify: exists .",
+      "verify": [
+        {
+          "kind": "exists",
+          "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\main.py"
+        },
+        {
+          "kind": "exists",
+          "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\."
+        }
+      ]
+    },
+    {
+      "action": {
+        "patch": "@@ -39,0 +39,5 @@",
+        "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\main.py",
+        "type": "apply_patch"
+      },
+      "done_means": "patch main.py",
+      "files": [
+        "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\main.py"
+      ],
+      "title": "Add error handling for invalid JSON format | apply_patch main.py | patch: @@ -39,0 +39,5 @@ | verify: exists .",
+      "verify": [
+        {
+          "kind": "exists",
+          "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\main.py"
+        },
+        {
+          "kind": "exists",
+          "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\."
+        }
+      ]
+    },
+    {
+      "action": {
+        "patch": "@@ -38,0 +45 @@",
+        "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\main.py",
+        "type": "apply_patch"
+      },
+      "done_means": "patch main.py",
+      "files": [
+        "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\main.py"
+      ],
+      "title": "Add error handling for file not found | apply_patch main.py | patch: @@ -38,0 +45 @@ | verify: exists .",
+      "verify": [
+        {
+          "kind": "exists",
+          "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\main.py"
+        },
+        {
+          "kind": "exists",
+          "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\."
+        }
+      ]
+    },
+    {
+      "action": {
+        "contents": "class NoMetricsError(Exception):",
+        "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\main.py",
+        "type": "write_file"
+      },
+      "done_means": "write main.py",
+      "files": [
+        "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\main.py"
+      ],
+      "title": "Define NoMetricsError exception | write_file main.py | contents: class NoMetricsError(Exception): | verify: exists .",
+      "verify": [
+        {
+          "kind": "exists",
+          "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\main.py"
+        },
+        {
+          "kind": "exists",
+          "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\."
+        }
+      ]
+    }
+  ]
+}

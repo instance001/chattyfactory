@@ -1,0 +1,128 @@
+{
+  "original_request": "build a file sorting tool. input folder for files to be added for sorting. output folder for sorted bins. sort files based on type.",
+  "normalized_request": "build a file sorting tool input folder for files to be added for sorting output folder for sorted bins sort files based on type",
+  "candidates": [
+    {
+      "id": "build_a_file_sorting_tool_sort_from_input_folder_to_output_folder_based",
+      "kind": "output",
+      "path": "C:\\Users\\User\\Desktop\\chattyfactorysyntaxsquashing\\chattyfactory\\output\\build_a_file_sorting_tool_Sort_from_input_folder_to_output_folder_based",
+      "score": 138,
+      "reasons": [
+        "token match build",
+        "prefix build",
+        "token match a",
+        "token match file",
+        "token match sorting",
+        "token match tool",
+        "token match input",
+        "token match folder",
+        "token match to",
+        "token match sorting",
+        "token match output",
+        "token match folder",
+        "token match sort",
+        "token match based"
+      ]
+    },
+    {
+      "id": "build_a_file_sorter_needs_to_have_an_input_folder_and_an_output_folder_f",
+      "kind": "output",
+      "path": "C:\\Users\\User\\Desktop\\chattyfactorysyntaxsquashing\\chattyfactory\\output\\build_a_file_sorter_needs_to_have_an_input_folder_and_an_output_folder_f",
+      "score": 98,
+      "reasons": [
+        "token match build",
+        "prefix build",
+        "token match a",
+        "token match file",
+        "token match input",
+        "token match folder",
+        "token match to",
+        "token match output",
+        "token match folder",
+        "token match sort"
+      ]
+    },
+    {
+      "id": "build_a_file_sorting_tool",
+      "kind": "output",
+      "path": "C:\\Users\\User\\Desktop\\chattyfactorysyntaxsquashing\\chattyfactory\\output\\build_a_file_sorting_tool",
+      "score": 88,
+      "reasons": [
+        "token match build",
+        "prefix build",
+        "token match a",
+        "token match file",
+        "token match sorting",
+        "token match tool",
+        "token match to",
+        "token match sorting",
+        "token match sort"
+      ]
+    },
+    {
+      "id": "build_a_simple_file_sorting_tool",
+      "kind": "output",
+      "path": "C:\\Users\\User\\Desktop\\chattyfactorysyntaxsquashing\\chattyfactory\\output\\build_a_simple_file_sorting_tool",
+      "score": 88,
+      "reasons": [
+        "token match build",
+        "prefix build",
+        "token match a",
+        "token match file",
+        "token match sorting",
+        "token match tool",
+        "token match to",
+        "token match sorting",
+        "token match sort"
+      ]
+    },
+    {
+      "id": "build_a_file_sorter_tool",
+      "kind": "output",
+      "path": "C:\\Users\\User\\Desktop\\chattyfactorysyntaxsquashing\\chattyfactory\\output\\build_a_file_sorter_tool",
+      "score": 68,
+      "reasons": [
+        "token match build",
+        "prefix build",
+        "token match a",
+        "token match file",
+        "token match tool",
+        "token match to",
+        "token match sort"
+      ]
+    },
+    {
+      "id": "scratch",
+      "kind": "scratch",
+      "path": "C:\\Users\\User\\Desktop\\chattyfactorysyntaxsquashing\\chattyfactory\\output",
+      "score": 60,
+      "reasons": [
+        "token match a",
+        "scratch baseline"
+      ]
+    },
+    {
+      "id": "build_a_simple_file_sorter",
+      "kind": "output",
+      "path": "C:\\Users\\User\\Desktop\\chattyfactorysyntaxsquashing\\chattyfactory\\output\\build_a_simple_file_sorter",
+      "score": 48,
+      "reasons": [
+        "token match build",
+        "prefix build",
+        "token match a",
+        "token match file",
+        "token match sort"
+      ]
+    }
+  ],
+  "top_7": [
+    "build_a_file_sorting_tool_sort_from_input_folder_to_output_folder_based",
+    "build_a_file_sorter_needs_to_have_an_input_folder_and_an_output_folder_f",
+    "build_a_file_sorting_tool",
+    "build_a_simple_file_sorting_tool",
+    "build_a_file_sorter_tool",
+    "scratch",
+    "build_a_simple_file_sorter"
+  ],
+  "threshold": 20
+}

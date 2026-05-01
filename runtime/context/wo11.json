@@ -1,0 +1,33 @@
+{
+  "anchors": [
+    "python_cli",
+    "egui_app",
+    "rust_cli"
+  ],
+  "anchor_scores": [
+    [
+      "build_a_simple_python_based_file_sorter_input_folder_for_files_to_go_int",
+      158
+    ],
+    [
+      "build_a_simple_file_sorter_python_language_input_folder_where_files_go_o",
+      128
+    ],
+    [
+      "buildapythonlogparserforconversationjsonfilesinputfolderforth",
+      118
+    ]
+  ],
+  "log_tail": "step 0: Ensure dir input | ensure_dir input | verify: exists input\nerror: py_compile failed for main.py: File \"main.py\", line 20\r\n    verify: exists main.py\r\n                   ^^^^\r\nSyntaxError: invalid syntax\n",
+  "last_run_summary": "Failed at step 1: py_compile failed for main.py: File \"main.py\", line 20\r\n    verify: exists main.py\r\n                   ^^^^\r\nSyntaxError: invalid syntax",
+  "failing_step": 1,
+  "failing_error": "py_compile failed for main.py: File \"main.py\", line 20\r\n    verify: exists main.py\r\n                   ^^^^\r\nSyntaxError: invalid syntax",
+  "work_order_id": null,
+  "recovery_attempts": 1,
+  "base_path": "C:\\Users\\User\\Desktop\\chattyfactory",
+  "recent_logs": [
+    "Log tail:\nstep 0: Ensure dir input | ensure_dir input | verify: exists input\nerror: py_compile failed for main.py: File \"main.py\", line 20\r\n    verify: exists main.py\r\n                   ^^^^\r\nSyntaxError: invalid syntax\n",
+    "System: Build wo11 failed at step 1: py_compile failed for main.py: File \"main.py\", line 20\r\n    verify: exists main.py\r\n                   ^^^^\r\nSyntaxError: invalid syntax",
+    "System: Step 1 FAILED - Ensure dir input | ensure_dir input | verify: exists input (py_compile failed for main.py: File \"main.py\", line 20\r\n    verify: exists main.py\r\n                   ^^^^\r\nSyntaxError: invalid syntax) log: C:\\Users\\User\\Desktop\\chattyfactory\\runtime\\runs\\wo11\\step_0\\step.log"
+  ]
+}

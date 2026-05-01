@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "created_at_utc": "unix:1776987980",
+  "os": "windows",
+  "root": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python",
+  "label": "new_project_lets_build_a_basic_gui_dashboard_in_python",
+  "tree": [
+    {
+      "path": "BuildSpec.md",
+      "kind": "file",
+      "size_bytes": 4001
+    },
+    {
+      "path": "ProjectSpec.json",
+      "kind": "file",
+      "size_bytes": 823
+    },
+    {
+      "path": "main.py",
+      "kind": "file",
+      "size_bytes": 667
+    }
+  ],
+  "known_files": [
+    "BuildSpec.md",
+    "ProjectSpec.json",
+    "main.py"
+  ],
+  "known_dirs": [],
+  "build": {
+    "language": "python",
+    "build_system": "python",
+    "entrypoints": [
+      "main.py"
+    ],
+    "run_hints": [
+      "py -3 main.py"
+    ],
+    "dependencies": [],
+    "notes": []
+  },
+  "hot_words": [
+    {
+      "word": "main",
+      "files": [
+        "BuildSpec.md",
+        "ProjectSpec.json"
+      ],
+      "occurrences": 10
+    },
+    {
+      "word": "argparse",
+      "files": [
+        "main.py"
+      ],
+      "occurrences": 1
+    },
+    {
+      "word": "def main",
+      "files": [
+        "BuildSpec.md"
+      ],
+      "occurrences": 1
+    }
+  ],
+  "excerpts": [
+    {
+      "path": "ProjectSpec.json",
+      "bytes": 823,
+      "excerpt": "{\n  \"spec_id\": \"chattyfactory.project_spec.v1\",\n  \"project_name\": \"new_project_Lets_build_a_basic_gui_dashboard_in_python\",\n  \"summary\": \"let's fix this basic gui dashboard in python\",\n  \"language\": \"python\",\n  \"entrypoints\": [\n    \"main.py\"\n  ],\n  \"expected_files\": [\n    \"main.py\",\n    \"ProjectSpec.json\"\n  ],\n  \"default_commands\": [\n    \"py -3 main.py --self-test\"\n  ],\n  \"acceptance_commands\": [\n    \"py -3 main.py --self-test\"\n  ],\n  \"acceptance_checks\": [\n    {\n      \"command\": \"py -3 main.py --self-test\",\n      \"expect_output_contains\": \"CF_OK\"\n    }\n  ],\n  \"key_files\": [],\n  \"current_features\": [],\n  \"invariants\": [\n    \"Keep the acceptance command passing after every patch.\"\n  ],\n  \"last_request\": \"let's fix this basic gui dashboard in python\",\n  \"last_work_order_id\": \"\",\n  \"updated_at\": \"unix:1776985210\"\n}"
+    },
+    {
+      "path": "main.py",
+      "bytes": 667,
+      "excerpt": "import argparse\nimport json\nimport statistics\nimport sys\nimport tkinter as tk\nfrom dataclasses import dataclass\nfrom pathlib import Path\nfrom tkinter import ttk, messagebox\n\n\n@dataclass\nclass Metric:\n    name: str\n    value: float\n    target: float\n\n    @property\n    def status(self) -> str:\n        if self.value >= self.target:\n            return \"on track\"\n        if self.value >= self.target * 0.8:\n            return \"watch\"\n        return \"behind\"\n\n\nDEFAULT_METRICS = [\n    Metric(\"Revenue\", 128.0, 120.0),\n    Metric(\"Active users\", 934.0, 1000.0),\n    Metric(\"Conversion\", 7.4, 6.5),\n    Metric(\"Support tickets\", 18.0, 12.0),\n]\n\n\ndef load_metrics(path: str"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+step 1: Ensure index.html has interactive elements | apply_patch index.html | patch: @@ -4,0 +5 @@ | verify: exists .

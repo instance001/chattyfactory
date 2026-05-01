@@ -1,6 +1,6 @@
 {
-    "max_tokens":  128,
-    "context":  2048,
+    "max_tokens":  4096,
+    "context":  32768,
     "backend":  "llama.cpp",
     "max_chunks":  null,
     "threads":  4,
@@ -8,9 +8,14 @@
 
                    ],
     "idle_timeout_ms":  null,
-    "timeout_ms":  120000,
+    "timeout_ms":  180000,
     "max_stdout_kb":  512,
-    "top_p":  0.9,
+    "top_p":  0.95,
+    "min_p":  0.08,
+    "repeat_penalty":  1.1,
+    "gpu_mode": "auto",
+    "n_gpu_layers": 35,
+    "main_gpu": 0,
     "model_path":  "models/tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf",
     "temperature":  0.7
 }

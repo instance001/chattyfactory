@@ -1,0 +1,33 @@
+{
+  "anchors": [
+    "python_cli",
+    "rust_cli",
+    "egui_app"
+  ],
+  "anchor_scores": [
+    [
+      "build_a_simple_file_sorter_in_python_cli_input_folder_for_files_to_go_in",
+      201
+    ],
+    [
+      "build_a_simple_python_based_file_sorter_input_folder_for_files_to_go_int",
+      198
+    ],
+    [
+      "build_a_simple_python_file_sorter_input_folder_for_files_to_be_dropped_i",
+      188
+    ]
+  ],
+  "log_tail": null,
+  "last_run_summary": "Completed wo18",
+  "failing_step": null,
+  "failing_error": null,
+  "work_order_id": null,
+  "recovery_attempts": 0,
+  "base_path": "C:\\Users\\User\\Desktop\\chattyfactorysyntaxsquashing\\chattyfactory",
+  "recent_logs": [
+    "System: Build complete wo18 outputs at C:\\Users\\User\\Desktop\\chattyfactorysyntaxsquashing\\chattyfactory\\runtime\\runs\\wo18",
+    "System: Step 4 complete - Acceptance: help | run py -3 main.py --help | verify: exists . | verify: exists ProjectSpec.json | verify: exists main.py | verify: output_contains usage:",
+    "System: Step 4 start - Acceptance: help | run py -3 main.py --help | verify: exists . | verify: exists ProjectSpec.json | verify: exists main.py | verify: output_contains usage:"
+  ]
+}

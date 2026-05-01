@@ -1,0 +1,67 @@
+You are ChattyFactory recovery assistant.
+OUTPUT CONTRACT (HARD):
+- TEXT ONLY.
+- First line MUST be .
+- Last line MUST be .
+- Between markers: output 3 to 8 Plan.md STEP LINES ONLY (no headers, no questions, no narration).
+- NO prose, NO markdown, NO code fences, NO backticks.
+Step line format:
+- [ ] <step title> | <action ...> | verify: <kind> <args...>
+Allowed actions:
+- ensure_dir <rel_dir>
+- write_file <rel_path> | contents: <text (u ... (truncated)
+[Start thinking]
+We need to output plan steps. We must create a file sorting tool. The project snapshot is empty. We need to create main.py and maybe a README. But we need at least one write_file or apply_patch that changes code/config implementing requested behavior. Since no files exist, we can ensure_dir scratch? Actually anchor is scratch. So we should create a directory scratch and put main.py there.
+We need to output 3-8 plan steps. Let's do:
+[ ] ensure_dir scratch | verify: dir_exists scratch
+[ ] write_file scratch/main.py | contents: <code> that sorts files in a directory by extension into subfolders. Provide simple script.
+[ ] run py -3 scratch/main.py | verify: stdout_contains "Sorting complete"
+But we need to ensure the script prints something. Let's write code: parse args: source dir, dest dir. For each file, create subdir by extension and move file.
+We'll include minimal code.
+We must use \n escapes for newlines in contents.
+Let's craft contents:
+import os, sys, shutil
+def main():
+    src = sys.argv[1] if len(sys.argv)>1 else '.'
+    dst = sys.argv[2] if len(sys.argv)>2 else 'sorted'
+    os.makedirs(dst, exist_ok=True)
+    for f in os.listdir(src):
+        path=os.path.join(src,f)
+        if os.path.isfile(path):
+            ext=os.path.splitext(f)[1].lstrip('.')
+            if not ext: ext='no_ext'
+            target=os.path.join(dst,ext)
+            os.makedirs(target, exist_ok=True)
+            shutil.move(path, os.path.join(target,f))
+    print("Sorting complete")
+if __name__=='__main__':
+    main()
+But we need to escape newlines. Also ensure correct syntax: os.makedirs with exist_ok param only in Python 3.2+. Use os.makedirs(dst, exist_ok=True). Good.
+We need to verify that script prints "Sorting complete". So run command and verify stdout_contains Sorting complete.
+Also we might want to create a test file to run? But not necessary.
+Let's produce steps:
+1 ensure_dir scratch
+2 write_file scratch/main.py | contents: <code>
+3 run py -3 scratch/main.py . test_dir | verify: stdout_contains Sorting complete
+But we need to provide arguments. We can just run with no args; it will use '.' and 'sorted'. That will move files from current dir into sorted. But there are none. But still prints.
+Ok.
+We must ensure that the script uses correct syntax: os.makedirs(dst, exist_ok=True) but in Python 3.2+ it's ok. Use os.makedirs(dst, exist_ok=True). Good.
+Let's craft contents string with \n escapes:
+import os, sys, shutil\n
+def main():\n
+    src = sys.argv[1] if len(sys.argv)>1 else '.'\n
+    dst = sys.argv[2] if len(sys.argv)>2 else 'sorted'\n
+    os.makedirs(dst, exist_ok=True)\n
+    for f in os.listdir(src):\n
+        path=os.path.join(src,f)\n
+        if os.path.isfile(path):\n
+            ext=os.path.splitext(f)[1].lstrip('.')\n
+            if not ext: ext='no_ext'\n
+            target=os.path.join(dst,ext)\n
+            os.makedirs(target, exist_ok=True)\n
+            shutil.move(path, os.path.join(target,f))\n
+    print("Sorting complete")\n
+if __name__=='__main__':\n
+    main()\n
+But we need to escape backslashes? The content string uses \n for newlines. We don't need to escape quotes inside string. But we need to escape double quotes? In the content string, we can use single quotes around the entire content. But we are writing in plan step: write_file scratch/main.py | contents: <text>.
+We just provide text with \n escapes. Use double quotes for string? The syntax: write_file <rel_path> | contents: <text (use \n escapes)>. So we need to provide the text after colon. We can include newlines as \n. We don't need to escape quotes inside content; they are part of the code. But we might need to escape backslashes

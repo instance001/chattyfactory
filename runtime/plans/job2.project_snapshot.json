@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "created_at_utc": "unix:1771894513",
+  "os": "windows",
+  "root": "C:\\Users\\User\\Desktop\\chattyfactorysyntaxsquashing\\chattyfactory\\output",
+  "label": "scratch",
+  "tree": [
+    {
+      "path": "build_a_file_sorter_needs_to_have_an_input_folder_and_an_output_folder_f/",
+      "kind": "dir",
+      "size_bytes": null
+    },
+    {
+      "path": "manuals/",
+      "kind": "dir",
+      "size_bytes": null
+    },
+    {
+      "path": "manuals/source/",
+      "kind": "dir",
+      "size_bytes": null
+    }
+  ],
+  "known_files": [],
+  "known_dirs": [
+    "build_a_file_sorter_needs_to_have_an_input_folder_and_an_output_folder_f",
+    "manuals",
+    "manuals/source"
+  ],
+  "build": {
+    "language": "unknown",
+    "build_system": "",
+    "entrypoints": [],
+    "run_hints": [],
+    "dependencies": [],
+    "notes": [
+      "Could not detect build system (no Cargo.toml/pyproject.toml/package.json found)."
+    ]
+  },
+  "hot_words": [],
+  "excerpts": []
+}

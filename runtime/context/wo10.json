@@ -1,0 +1,33 @@
+{
+  "anchors": [
+    "python_cli",
+    "egui_app",
+    "rust_cli"
+  ],
+  "anchor_scores": [
+    [
+      "build_a_simple_python_based_file_sorter_input_folder_for_files_to_go_int",
+      158
+    ],
+    [
+      "build_a_simple_file_sorter_python_language_input_folder_where_files_go_o",
+      128
+    ],
+    [
+      "buildapythonlogparserforconversationjsonfilesinputfolderforth",
+      118
+    ]
+  ],
+  "log_tail": "step 3: Run command | run py -3 main.py | verify: glob_count output/*.txt 1\nerror: command [\"py\", \"-3\", \"main.py\"] failed with code Some(1) (stdout=C:\\Users\\User\\Desktop\\chattyfactory\\runtime\\runs\\wo10\\step_3\\stdout.log, stderr=C:\\Users\\User\\Desktop\\chattyfactory\\runtime\\runs\\wo10\\step_3\\stderr.log)\n",
+  "last_run_summary": "Failed at step 4: verify glob_count min failed: 0 < 1",
+  "failing_step": 4,
+  "failing_error": "verify glob_count min failed: 0 < 1",
+  "work_order_id": null,
+  "recovery_attempts": 0,
+  "base_path": "C:\\Users\\User\\Desktop\\chattyfactory",
+  "recent_logs": [
+    "Log tail:\nstep 3: Run command | run py -3 main.py | verify: glob_count output/*.txt 1\nerror: command [\"py\", \"-3\", \"main.py\"] failed with code Some(1) (stdout=C:\\Users\\User\\Desktop\\chattyfactory\\runtime\\runs\\wo10\\step_3\\stdout.log, stderr=C:\\Users\\User\\Desktop\\chattyfactory\\runtime\\runs\\wo10\\step_3\\stderr.log)\n",
+    "System: Build wo10 failed at step 4: verify glob_count min failed: 0 < 1",
+    "System: Step 4 FAILED - Run command | run py -3 main.py | verify: glob_count output/*.txt 1 (verify glob_count min failed: 0 < 1) log: C:\\Users\\User\\Desktop\\chattyfactory\\runtime\\runs\\wo10\\step_3\\step.log"
+  ]
+}

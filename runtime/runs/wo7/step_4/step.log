@@ -1,0 +1,1 @@
+step 4: Run static web smoke check | run py -3 smoke_check.py | verify: stdout_contains CF_OK

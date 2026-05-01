@@ -1,0 +1,86 @@
+{
+  "avg_compiled_steps": 4.833333333333333,
+  "avg_plan_steps": 4.833333333333333,
+  "event_counts": {
+    "anchor_snapshot": 16,
+    "anchor_turn": 16,
+    "atomized_code_writer_failed": 1,
+    "atomized_family_attempt": 6,
+    "atomized_patch_failed": 7,
+    "atomized_plan_accepted": 1,
+    "atomized_seed_routing": 6,
+    "broad_plan_fallback_started": 2,
+    "broad_plan_fallback_succeeded": 2,
+    "build_started": 4,
+    "buildspec_frozen_on_confirm_run": 7,
+    "clarify_invalid_output": 2,
+    "compile_ok": 8,
+    "deterministic_dashboard_plan_accepted": 1,
+    "direct_new_project_fast_path": 7,
+    "patch_acceptance_intent": 1,
+    "pipeline_started": 16,
+    "plan_confirmed": 8,
+    "plan_intent": 27,
+    "plan_intent_serialize_failed": 9,
+    "plan_step_not_dsl": 10,
+    "plan_turn": 99,
+    "plan_validation_error": 11,
+    "planning_note": 54,
+    "project_blueprint": 6,
+    "project_blueprint_adjusted": 3,
+    "project_snapshot_created": 26,
+    "request_classified": 14,
+    "request_started": 30,
+    "runner_summary": 3,
+    "runway_rule_active": 4,
+    "scratch_seed_first_attempt": 3,
+    "static_web_code_writer_failed": 1,
+    "static_web_plan_accepted": 2,
+    "static_web_seed_first_attempt": 3,
+    "step_complete": 7,
+    "step_failed": 4,
+    "step_started": 11,
+    "structured_patch_fallback": 1,
+    "structured_patch_fallback_failed": 1
+  },
+  "generated_unix_ms": 1777603238330,
+  "jobs_broad_plan_fallback": 2,
+  "jobs_canceled": 0,
+  "jobs_failed": 4,
+  "jobs_success": 0,
+  "jobs_total": 30,
+  "median_duration_ms": 1977532,
+  "success_rate": 0.0,
+  "top_anchors": [
+    {
+      "anchor": "scratch",
+      "count": 16
+    }
+  ],
+  "top_atomized_gaps": [
+    {
+      "count": 1,
+      "gap": "attempt_failed:static_web:atomized_static_web_seed_failed"
+    },
+    {
+      "count": 1,
+      "gap": "attempt_failed:python_cli:atomized_python_seed_failed"
+    }
+  ],
+  "top_broad_fallback_reasons": [
+    {
+      "count": 2,
+      "reason": "atomized_families_did_not_accept"
+    }
+  ],
+  "top_models": [
+    {
+      "count": 16,
+      "model": "C:\\Users\\User\\Desktop\\chattyfactory\\models\\gpt-oss-20b-Q4_K_M.gguf"
+    },
+    {
+      "count": 14,
+      "model": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\models\\Qwen2.5-Coder-32B-Instruct-abliterated-Q5_K_M.gguf"
+    }
+  ]
+}

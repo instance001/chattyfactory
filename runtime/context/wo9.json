@@ -1,0 +1,32 @@
+{
+  "anchors": [
+    "python_cli",
+    "rust_cli"
+  ],
+  "anchor_scores": [
+    [
+      "python_cli",
+      12
+    ],
+    [
+      "translatetomanderin",
+      10
+    ],
+    [
+      "buildaconversationsjsonparserthatsplitsthefilebackintoindividu",
+      10
+    ]
+  ],
+  "log_tail": "step 0: Ensure dir input | ensure_dir input | verify: exists input\nerror: py_compile failed for main.py: File \"main.py\", line 5\r\n    print(\\\"usage: py -3 main.py [options]\\\")\r\n           ^\r\nSyntaxError: unexpected character after line continuation character\n",
+  "last_run_summary": "Failed at step 1: py_compile failed for main.py: File \"main.py\", line 5\r\n    print(\\\"usage: py -3 main.py [options]\\\")\r\n           ^\r\nSyntaxError: unexpected character after line continuation character",
+  "failing_step": 1,
+  "failing_error": "py_compile failed for main.py: File \"main.py\", line 5\r\n    print(\\\"usage: py -3 main.py [options]\\\")\r\n           ^\r\nSyntaxError: unexpected character after line continuation character",
+  "work_order_id": null,
+  "recovery_attempts": 1,
+  "base_path": "C:\\Users\\User\\Desktop\\chattyfactory",
+  "recent_logs": [
+    "Log tail:\nstep 0: Ensure dir input | ensure_dir input | verify: exists input\nerror: py_compile failed for main.py: File \"main.py\", line 5\r\n    print(\\\"usage: py -3 main.py [options]\\\")\r\n           ^\r\nSyntaxError: unexpected character after line continuation character\n",
+    "System: Build wo9 failed at step 1: py_compile failed for main.py: File \"main.py\", line 5\r\n    print(\\\"usage: py -3 main.py [options]\\\")\r\n           ^\r\nSyntaxError: unexpected character after line continuation character",
+    "System: Step 1 FAILED - Ensure dir input | ensure_dir input | verify: exists input (py_compile failed for main.py: File \"main.py\", line 5\r\n    print(\\\"usage: py -3 main.py [options]\\\")\r\n           ^\r\nSyntaxError: unexpected character after line continuation character) log: C:\\Users\\User\\Desktop\\chattyfactory\\runtime\\runs\\wo9\\step_0\\step.log"
+  ]
+}

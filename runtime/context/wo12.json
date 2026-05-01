@@ -1,0 +1,33 @@
+{
+  "anchors": [
+    "python_cli",
+    "egui_app",
+    "rust_cli"
+  ],
+  "anchor_scores": [
+    [
+      "build_a_simple_python_based_file_sorter_input_folder_for_files_to_go_int",
+      218
+    ],
+    [
+      "build_a_simple_python_file_sorter_input_folder_for_files_to_be_dropped_i",
+      218
+    ],
+    [
+      "build_a_simple_file_sorter_python_language_input_folder_where_files_go_o",
+      188
+    ]
+  ],
+  "log_tail": "step 4: Write file | write_file main.py | contents: <code> | verify: exists main.py\nerror: py_compile failed for main.py: File \"main.py\", line 1\r\n    <code>\r\n    ^\r\nSyntaxError: invalid syntax\n",
+  "last_run_summary": "Failed at step 5: py_compile failed for main.py: File \"main.py\", line 1\r\n    <code>\r\n    ^\r\nSyntaxError: invalid syntax",
+  "failing_step": 5,
+  "failing_error": "py_compile failed for main.py: File \"main.py\", line 1\r\n    <code>\r\n    ^\r\nSyntaxError: invalid syntax",
+  "work_order_id": null,
+  "recovery_attempts": 1,
+  "base_path": "C:\\Users\\User\\Desktop\\chattyfactory",
+  "recent_logs": [
+    "Log tail:\nstep 4: Write file | write_file main.py | contents: <code> | verify: exists main.py\nerror: py_compile failed for main.py: File \"main.py\", line 1\r\n    <code>\r\n    ^\r\nSyntaxError: invalid syntax\n",
+    "System: Build wo12 failed at step 5: py_compile failed for main.py: File \"main.py\", line 1\r\n    <code>\r\n    ^\r\nSyntaxError: invalid syntax",
+    "System: Step 5 FAILED - Write file | write_file main.py | contents: <code> | verify: exists main.py (py_compile failed for main.py: File \"main.py\", line 1\r\n    <code>\r\n    ^\r\nSyntaxError: invalid syntax) log: C:\\Users\\User\\Desktop\\chattyfactory\\runtime\\runs\\wo12\\step_4\\step.log"
+  ]
+}

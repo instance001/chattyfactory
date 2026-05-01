@@ -1,0 +1,2 @@
+step 1: Correct the acceptance command in ProjectSpec.json | apply_patch ProjectSpec.json | patch: @@ -10,7 +10,"acceptance_commands":["py -3 smoke_check.py --help"],"verify: exists ProjectSpec.json | verify: exists .
+error: invalid JSON in C:\Users\User\Desktop\chatty-modules\chattyfactory-module\output\lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window\ProjectSpec.json

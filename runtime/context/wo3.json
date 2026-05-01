@@ -1,0 +1,28 @@
+{
+  "anchors": [
+    "new_project_lets_build_a_basic_gui_dashboard_in_python",
+    "scratch"
+  ],
+  "anchor_scores": [
+    [
+      "new_project_lets_build_a_basic_gui_dashboard_in_python",
+      100
+    ],
+    [
+      "scratch",
+      90
+    ]
+  ],
+  "log_tail": "step 0: Check project contract | ensure_dir . | verify: contains ProjectSpec.json chattyfactory.project_spec.v1\nerror: py_compile failed for main.py: File \"main.py\", line 34\r\n    def load_metrics(path: str\r\n                    ^\r\nSyntaxError: '(' was never closed\n",
+  "last_run_summary": "Failed at step 1: py_compile failed for main.py: File \"main.py\", line 34\r\n    def load_metrics(path: str\r\n                    ^\r\nSyntaxError: '(' was never closed",
+  "failing_step": 1,
+  "failing_error": "py_compile failed for main.py: File \"main.py\", line 34\r\n    def load_metrics(path: str\r\n                    ^\r\nSyntaxError: '(' was never closed",
+  "work_order_id": null,
+  "recovery_attempts": 0,
+  "base_path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module",
+  "recent_logs": [
+    "Log tail:\nstep 0: Check project contract | ensure_dir . | verify: contains ProjectSpec.json chattyfactory.project_spec.v1\nerror: py_compile failed for main.py: File \"main.py\", line 34\r\n    def load_metrics(path: str\r\n                    ^\r\nSyntaxError: '(' was never closed\n",
+    "System: Build wo3 failed at step 1: py_compile failed for main.py: File \"main.py\", line 34\r\n    def load_metrics(path: str\r\n                    ^\r\nSyntaxError: '(' was never closed",
+    "System: Step 1 FAILED - Check project contract | ensure_dir . | verify: contains ProjectSpec.json chattyfactory.project_spec.v1 (py_compile failed for main.py: File \"main.py\", line 34\r\n    def load_metrics(path: str\r\n                    ^\r\nSyntaxError: '(' was never closed) log: C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\runtime\\runs\\wo3\\step_0\\step.log"
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "created_at_utc": "unix:1777595271",
+  "os": "windows",
+  "root": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output",
+  "label": "scratch",
+  "tree": [
+    {
+      "path": "lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window/",
+      "kind": "dir",
+      "size_bytes": null
+    },
+    {
+      "path": "lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window/ProjectSpec.json",
+      "kind": "file",
+      "size_bytes": 96
+    },
+    {
+      "path": "lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window/index.html",
+      "kind": "file",
+      "size_bytes": 3973
+    },
+    {
+      "path": "lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window/smoke_check.py",
+      "kind": "file",
+      "size_bytes": 1189
+    },
+    {
+      "path": "lets_make_the_gpu_monitor_track_real_telemetry/",
+      "kind": "dir",
+      "size_bytes": null
+    },
+    {
+      "path": "lets_make_the_gpu_monitor_track_real_telemetry/BuildSpec.md",
+      "kind": "file",
+      "size_bytes": 3066
+    },
+    {
+      "path": "manuals/",
+      "kind": "dir",
+      "size_bytes": null
+    },
+    {
+      "path": "manuals/source/",
+      "kind": "dir",
+      "size_bytes": null
+    }
+  ],
+  "known_files": [
+    "lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window/ProjectSpec.json",
+    "lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window/index.html",
+    "lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window/smoke_check.py",
+    "lets_make_the_gpu_monitor_track_real_telemetry/BuildSpec.md"
+  ],
+  "known_dirs": [
+    "lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window",
+    "lets_make_the_gpu_monitor_track_real_telemetry",
+    "manuals",
+    "manuals/source"
+  ],
+  "build": {
+    "language": "unknown",
+    "build_system": "",
+    "entrypoints": [],
+    "run_hints": [],
+    "dependencies": [],
+    "notes": [
+      "Could not detect build system (no Cargo.toml/pyproject.toml/package.json found)."
+    ]
+  },
+  "hot_words": [
+    {
+      "word": "main",
+      "files": [
+        "lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window/smoke_check.py",
+        "lets_make_the_gpu_monitor_track_real_telemetry/BuildSpec.md"
+      ],
+      "occurrences": 4
+    }
+  ],
+  "excerpts": []
+}

@@ -1,0 +1,15 @@
+{
+  "binary_path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\runtime\\bin\\windows\\llama-cli.exe",
+  "binary_mtime_unix": 1772154138,
+  "supported_flags": [
+    "--main-gpu",
+    "--min-p",
+    "--n-gpu-layers",
+    "--repeat-penalty",
+    "--seed",
+    "--temp",
+    "--threads",
+    "--top-k",
+    "--top-p"
+  ]
+}

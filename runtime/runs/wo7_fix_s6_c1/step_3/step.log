@@ -1,0 +1,2 @@
+step 3: Add help message to smoke_check.py | apply_patch smoke_check.py | patch: @@ -24,0 +25 @@\ndef main() -> int:\n+    if len(sys.argv) > 1 and sys.argv[1] == "--help":\n+        print("usage: smoke_check.py [--help]")\n+        return 0\n    html_path = Path("index.html")\n | verify: exists smoke_check.py
+error: patch context exceeds file

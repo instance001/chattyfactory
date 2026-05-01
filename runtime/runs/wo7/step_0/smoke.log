@@ -1,0 +1,5 @@
+post-step smoke checks
+work_order: wo7
+project_root: C:\Users\User\Desktop\chatty-modules\chattyfactory-module\output\lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window
+spec_root: C:\Users\User\Desktop\chatty-modules\chattyfactory-module\output\lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window
+note: no ProjectSpec.json in spec_root (skipping spec checks)

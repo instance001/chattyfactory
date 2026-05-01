@@ -1,0 +1,31 @@
+{
+  "anchors": [
+    "scratch"
+  ],
+  "anchor_scores": [
+    [
+      "build_a_simple_python_based_file_sorter_input_folder_for_files_to_go_int",
+      168
+    ],
+    [
+      "build_a_simple_python_file_sorter_input_folder_for_files_to_be_dropped_i",
+      161
+    ],
+    [
+      "build_a_simple_python_file_sorter_tool_input_folder_for_files_to_go_in_o",
+      161
+    ]
+  ],
+  "log_tail": null,
+  "last_run_summary": "Completed wo22",
+  "failing_step": null,
+  "failing_error": null,
+  "work_order_id": null,
+  "recovery_attempts": 0,
+  "base_path": "C:\\Users\\User\\Desktop\\chattyfactorysyntaxsquashing\\chattyfactory",
+  "recent_logs": [
+    "System: Build complete wo22 outputs at C:\\Users\\User\\Desktop\\chattyfactorysyntaxsquashing\\chattyfactory\\runtime\\runs\\wo22",
+    "System: Step 3 complete - Run | run python main.py | verify: exists main.py",
+    "System: Step 3 start - Run | run python main.py | verify: exists main.py"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "anchors": [
+    "scratch"
+  ],
+  "anchor_scores": [
+    [
+      "build_a_file_sorter_language_python_cli_input_folder_for_files_output_fo",
+      178
+    ],
+    [
+      "build_a_simple_python_based_file_sorter_input_folder_for_files_to_go_int",
+      168
+    ],
+    [
+      "build_a_simple_python_file_sorter_tool_input_folder_for_files_to_go_in_o",
+      168
+    ]
+  ],
+  "log_tail": "step 3: Recovery: inspect failure at step 4 \"generated main.py looks like a stub (only prints ok/hi/hello); implement requested behavior and add a stronger acceptance check\" | run echo recovery_attempt | verify: exists .\nerror: last spawn error: program not found\n",
+  "last_run_summary": "Failed at step 4: last spawn error: program not found",
+  "failing_step": 4,
+  "failing_error": "last spawn error: program not found",
+  "work_order_id": null,
+  "recovery_attempts": 1,
+  "base_path": "C:\\Users\\User\\Desktop\\chattyfactorysyntaxsquashing\\chattyfactory",
+  "recent_logs": [
+    "Log tail:\nstep 3: Recovery: inspect failure at step 4 \"generated main.py looks like a stub (only prints ok/hi/hello); implement requested behavior and add a stronger acceptance check\" | run echo recovery_attempt | verify: exists .\nerror: last spawn error: program not found\n",
+    "System: Build wo24 failed at step 4: last spawn error: program not found",
+    "System: Step 4 FAILED - Recovery: inspect failure at step 4 \"generated main.py looks like a stub (only prints ok/hi/hello); implement requested behavior and add a stronger acceptance check\" | run echo recovery_attempt | verify: exists . (last spawn error: program not found) log: C:\\Users\\User\\Desktop\\chattyfactorysyntaxsquashing\\chattyfactory\\runtime\\runs\\wo24\\step_3\\step.log"
+  ]
+}

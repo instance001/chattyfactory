@@ -1,0 +1,1 @@
+each step must include at least one verify: clause (line: '- [ ] Step 2 | Create a directory named 'src' for source code | action args: create_directory_scr_src_for_source_code')

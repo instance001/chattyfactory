@@ -1,0 +1,20 @@
+{
+  "original_request": "build a file sorter. needs to have an input folder and an output folder for sorted bins. sort based on file extensions.",
+  "normalized_request": "build a file sorter needs to have an input folder and an output folder for sorted bins sort based on file extensions",
+  "candidates": [
+    {
+      "id": "scratch",
+      "kind": "scratch",
+      "path": "C:\\Users\\User\\Desktop\\chattyfactorysyntaxsquashing\\chattyfactory\\output",
+      "score": 60,
+      "reasons": [
+        "token match a",
+        "scratch baseline"
+      ]
+    }
+  ],
+  "top_7": [
+    "scratch"
+  ],
+  "threshold": 20
+}

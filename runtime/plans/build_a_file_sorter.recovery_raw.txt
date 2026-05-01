@@ -1,0 +1,10 @@
+- [ ] Step title | action args... | verify: <kind> <args...>
+  ensure_dir input
+  write_file input/file1.txt | contents: "file1 content"
+  apply_patch input/file1.patch | patch: "--- a/file1.py\n+++ b/file1.py\n@@ -0,0 +1 @@\n+import os\n+\ndef main():\n    print('Hello!')\n+"
+  ensure_dir output
+  write_file output/folder1.txt | contents: "folder content"
+  apply_patch output/folder1.patch | patch: "--- a/folder1.py\n+++ b/folder1.py\n@@ -0,0 +1 @@\n+import os\n+\ndef main():\n    print('Hello!')\n+" 
+  ensure_dir input
+  write_file input/file2.txt | contents: "file2 content"
+  apply_patch input/file2.patch | patch: "--- a/file2.py\n+++ b/file2.py\n@@ -0,0 +1 @@\n+import os\n+\ndef main():\n    print('Hello!')\n+"

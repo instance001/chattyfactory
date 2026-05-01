@@ -1,0 +1,113 @@
+{
+  "metadata": {
+    "created_at": "2026-04-30T23:25:17.055241+00:00",
+    "id": "wo7_fix_s6_c2",
+    "title": "Build repair: step 6 (Acceptance: help | run py -3 smoke_check.py --help | verify: exists . | verify: exists -3 | verify: output_contains usage:)"
+  },
+  "plan_receipt_hash": "208a8ab4e5a63d1f3da0fef11cf6fa77b93d8e79ea8a9a499f4970c96052d24a",
+  "policy": {
+    "allow_delete": false,
+    "allow_external_paths": false,
+    "allow_network": false
+  },
+  "steps": [
+    {
+      "action": {
+        "patch": "@@ -1,0 +1,7 @@",
+        "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window\\index.html",
+        "type": "apply_patch"
+      },
+      "done_means": "patch index.html",
+      "files": [
+        "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window\\index.html"
+      ],
+      "title": "Ensure index.html has required structure | apply_patch index.html | patch: @@ -1,0 +1,7 @@ | verify: exists .",
+      "verify": [
+        {
+          "kind": "exists",
+          "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window\\index.html"
+        },
+        {
+          "kind": "exists",
+          "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window\\."
+        }
+      ]
+    },
+    {
+      "action": {
+        "patch": "@@ -4,0 +5 @@",
+        "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window\\index.html",
+        "type": "apply_patch"
+      },
+      "done_means": "patch index.html",
+      "files": [
+        "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window\\index.html"
+      ],
+      "title": "Ensure index.html has interactive elements | apply_patch index.html | patch: @@ -4,0 +5 @@ | verify: exists .",
+      "verify": [
+        {
+          "kind": "exists",
+          "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window\\index.html"
+        },
+        {
+          "kind": "exists",
+          "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window\\."
+        }
+      ]
+    },
+    {
+      "action": {
+        "contents": "from pathlib import Path\nimport sys\n\nINTENT_KEYWORDS = [\"dashboard\", \"monitor\", \"window\"]\ndef main() -> int:\n    html_path = Path(\"index.html\")\n    if not html_path.exists():\n        raise SystemExit(\"index.html missing\")\n    text = html_path.read_text(encoding=\"utf-8\").lower()\n    required = [\"<html\", \"</html>\", \"<body\", \"</body>\"]\n    missing = [needle for needle in required if needle not in text]\n    if missing:\n        raise SystemExit(\"missing required html structure: \" + \", \".join(missing))\n    has_behavior = \"<script\" in text or \"<form\" in text or \"button\" in text or \"canvas\" in text\n    if not has_behavior:\n        raise SystemExit(\"page has no obvious interactive/behavior surface\")\n    missing_keywords = [word for word in INTENT_KEYWORDS if word not in text]\n    if len(missing_keywords) > max(2, len(INTENT_KEYWORDS) // 2):\n        raise SystemExit(\"page appears weakly tied to request; missing keywords: \" + \", \".join(missing_keywords))\n    if len(sys.argv) > 1 and sys.argv[1] == \"--help\":\n        print(\"usage: smoke_check.py [--help]\")\n        return 0\n    print(\"usage: smoke_check.py [--help]\")\n    return 0\nif __name__ == \"__main__\":\n    raise SystemExit(main())",
+        "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window\\smoke_check.py",
+        "type": "write_file"
+      },
+      "done_means": "write smoke_check.py via contents:",
+      "files": [
+        "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window\\smoke_check.py"
+      ],
+      "title": "Update smoke_check.py to check for usage message | write_file smoke_check.py | contents: from pathlib import Path\\nimport sys\\n\\nINTENT_KEYWORDS = [\"dashboard\", \"monitor\", \"window\"]\\ndef main() -> int:\\n    html_path = Path(\"index.html\")\\n    if not html_path.exists():\\n        raise SystemExit(\"index.html missing\")\\n    text = html_path.read_text(encoding=\"utf-8\").lower()\\n    required = [\"<html\", \"</html>\", \"<body\", \"</body>\"]\\n    missing = [needle for needle in required if needle not in text]\\n    if missing:\\n        raise SystemExit(\"missing required html structure: \" + \", \".join(missing))\\n    has_behavior = \"<script\" in text or \"<form\" in text or \"button\" in text or \"canvas\" in text\\n    if not has_behavior:\\n        raise SystemExit(\"page has no obvious interactive/behavior surface\")\\n    missing_keywords = [word for word in INTENT_KEYWORDS if word not in text]\\n    if len(missing_keywords) > max(2, len(INTENT_KEYWORDS) // 2):\\n        raise SystemExit(\"page appears weakly tied to request; missing keywords: \" + \", \".join(missing_keywords))\\n    if len(sys.argv) > 1 and sys.argv[1] == \"--help\":\\n        print(\"usage: smoke_check.py [--help]\")\\n        return 0\\n    print(\"usage: smoke_check.py [--help]\")\\n    return 0\\nif __name__ == \"__main__\":\\n    raise SystemExit(main()) | verify: exists smoke_check.py",
+      "verify": [
+        {
+          "kind": "exists",
+          "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window\\smoke_check.py"
+        },
+        {
+          "kind": "exists",
+          "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window\\smoke_check.py"
+        }
+      ]
+    },
+    {
+      "action": {
+        "argv": [
+          "py",
+          "-3",
+          "smoke_check.py",
+          "--help"
+        ],
+        "cwd": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window",
+        "timeout_ms": null,
+        "type": "run_command"
+      },
+      "done_means": "command run",
+      "files": [
+        "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window"
+      ],
+      "title": "Ensure help message is printed correctly | run py -3 smoke_check.py --help | verify: output_contains usage:",
+      "verify": [
+        {
+          "argv": [
+            "py",
+            "-3",
+            "smoke_check.py",
+            "--help"
+          ],
+          "cwd": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window",
+          "expect_exit": 0,
+          "expect_output_contains": "usage:",
+          "kind": "command"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "metadata": {
+    "created_at": "2026-04-23T23:25:32.710058900+00:00",
+    "id": "wo3_fix_s1_c4",
+    "title": "Build repair: step 1 (Check project contract | ensure_dir . | verify: contains ProjectSpec.json chattyfactory.project_spec.v1)"
+  },
+  "plan_receipt_hash": "22424f64ba0506aa518ba79ff113c6721bd7c171c7caa9749ccbdffb9c5f93ad",
+  "policy": {
+    "allow_delete": false,
+    "allow_external_paths": false,
+    "allow_network": false
+  },
+  "steps": [
+    {
+      "action": {
+        "patch": "@@ -34,1 +34,2 @@\ndef load_metrics(path: str):\n    with open(path, 'r') as file:",
+        "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\main.py",
+        "type": "apply_patch"
+      },
+      "done_means": "patch main.py",
+      "files": [
+        "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\main.py"
+      ],
+      "title": "Fix syntax error in main.py | apply_patch main.py | patch: @@ -34,1 +34,2 @@\\ndef load_metrics(path: str):\\n    with open(path, 'r') as file: | verify: exists .",
+      "verify": [
+        {
+          "kind": "exists",
+          "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\main.py"
+        },
+        {
+          "kind": "exists",
+          "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\."
+        }
+      ]
+    },
+    {
+      "action": {
+        "contents": "from typing import List\nfrom dataclasses import dataclass\nimport json\nimport statistics\nimport sys\ntkinter as tk\nfrom pathlib import Path\nfrom tkinter import ttk, messagebox",
+        "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\main.py",
+        "type": "write_file"
+      },
+      "done_means": "write main.py",
+      "files": [
+        "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\main.py"
+      ],
+      "title": "Ensure necessary imports are present | write_file main.py | contents: from typing import List\\nfrom dataclasses import dataclass\\nimport json\\nimport statistics\\nimport sys\\ntkinter as tk\\nfrom pathlib import Path\\nfrom tkinter import ttk, messagebox | verify: exists .",
+      "verify": [
+        {
+          "kind": "exists",
+          "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\main.py"
+        },
+        {
+          "kind": "exists",
+          "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\."
+        }
+      ]
+    },
+    {
+      "action": {
+        "patch": "@@ -40,1 +40,2 @@\n        metrics = json.load(file)\n    return [Metric(**metric) for metric in metrics]",
+        "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\main.py",
+        "type": "apply_patch"
+      },
+      "done_means": "patch main.py",
+      "files": [
+        "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\main.py"
+      ],
+      "title": "Add missing return statement in load_metrics | apply_patch main.py | patch: @@ -40,1 +40,2 @@\\n        metrics = json.load(file)\\n    return [Metric(**metric) for metric in metrics] | verify: exists .",
+      "verify": [
+        {
+          "kind": "exists",
+          "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\main.py"
+        },
+        {
+          "kind": "exists",
+          "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\."
+        }
+      ]
+    },
+    {
+      "action": {
+        "patch": "@@ -39,0 +39,5 @@\n    try:\n        with open(path, 'r') as file:\n            metrics = json.load(file)\n    except json.JSONDecodeError as e:\n        print(f\"Invalid JSON format: {e}\")\n        return []",
+        "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\main.py",
+        "type": "apply_patch"
+      },
+      "done_means": "patch main.py",
+      "files": [
+        "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\main.py"
+      ],
+      "title": "Add error handling for invalid JSON format | apply_patch main.py | patch: @@ -39,0 +39,5 @@\\n    try:\\n        with open(path, 'r') as file:\\n            metrics = json.load(file)\\n    except json.JSONDecodeError as e:\\n        print(f\"Invalid JSON format: {e}\")\\n        return [] | verify: exists .",
+      "verify": [
+        {
+          "kind": "exists",
+          "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\main.py"
+        },
+        {
+          "kind": "exists",
+          "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\."
+        }
+      ]
+    },
+    {
+      "action": {
+        "patch": "@@ -38,0 +45 @@\n    try:\n        with open(path, 'r') as file:\n            metrics = json.load(file)\n    except FileNotFoundError as e:\n        print(f\"File not found: {e}\")\n        return []",
+        "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\main.py",
+        "type": "apply_patch"
+      },
+      "done_means": "patch main.py",
+      "files": [
+        "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\main.py"
+      ],
+      "title": "Add error handling for file not found | apply_patch main.py | patch: @@ -38,0 +45 @@\\n    try:\\n        with open(path, 'r') as file:\\n            metrics = json.load(file)\\n    except FileNotFoundError as e:\\n        print(f\"File not found: {e}\")\\n        return [] | verify: exists .",
+      "verify": [
+        {
+          "kind": "exists",
+          "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\main.py"
+        },
+        {
+          "kind": "exists",
+          "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\."
+        }
+      ]
+    },
+    {
+      "action": {
+        "contents": "class NoMetricsError(Exception):\n    pass",
+        "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\main.py",
+        "type": "write_file"
+      },
+      "done_means": "write main.py",
+      "files": [
+        "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\main.py"
+      ],
+      "title": "Define NoMetricsError exception | write_file main.py | contents: class NoMetricsError(Exception):\\n    pass | verify: exists .",
+      "verify": [
+        {
+          "kind": "exists",
+          "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\main.py"
+        },
+        {
+          "kind": "exists",
+          "path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module\\output\\new_project_Lets_build_a_basic_gui_dashboard_in_python\\."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+- [ ] Step title 1 | ensure_dir build_a_file_sorting_tool_2/src | verify: dir_exists build_a_file_sorting_tool_2/src
+- [ ] Step title 2 | run python -3 src/main.py | apply_patch build_a_file_sorting_tool_2/patch.txt | verify: exists build_a_file_sorting_tool_2/build_a_file_sorting_tool_2.zip

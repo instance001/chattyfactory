@@ -1,0 +1,31 @@
+You are ChattyFactory recovery assistant.
+OUTPUT CONTRACT (HARD):
+- TEXT ONLY.
+- First line MUST be .
+- Last line MUST be .
+- Between markers: output 3 to 8 Plan.md STEP LINES ONLY (no headers, no questions, no narration).
+- NO prose, NO markdown, NO code fences, NO backticks.
+Step line format:
+- [ ] <step title> | <action ...> | verify: <kind> <args...>
+Allowed actions:
+- ensure_dir <rel_dir>
+- write_file <rel_path> | contents: <text (u ... (truncated)
+- [ ] ensure_dir build_a_file_sorter_tool_2/src/main/python
+- [ ] write_file build_a_file_sorter_tool_2/src/main/python/file_sorter.py | contents: """
+from typing import List, Tuple
+def sort_files_by_extension(files: List[str]) -> List[Tuple[str, str]]:
+    # Implement the logic to sort files by their extension
+    pass
+- [ ] apply_patch build_a_file_sorter_tool_2/src/main/python/file_sorter.py | patch: """
+diff --git a/src/main/python/file_sorter.py b/src/main/python/file_sorter.py
+index 1234567..89abcdef 100644
+--- a/src/main/python/file_sorter.py
++++ b/src/main/python/file_sorter.py
+@@ -1,6 +1,7 @@
+ from typing import List, Tuple
++def sort_files_by_extension(files: List[str]) -> List[Tuple[str, str]]:
+     # Implement the logic to sort files by their extension
+     pass
+
+! grounding_gate_errors:
+- verify references unknown path: build_a_file_sorter_tool_2/src/main/python

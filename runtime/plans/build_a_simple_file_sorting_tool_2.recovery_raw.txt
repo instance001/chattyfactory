@@ -1,0 +1,4 @@
+- [ ] Step title | action args... | verify: <kind> <args...>
+- ensure_dir project
+- apply_patch build_a_simple_file_sorting_tool_2.py | patch: <<actual_patch>>
+- run py -3 build_a_simple_file_sorting_tool_2.py | verify: exists output/sorted_files.txt

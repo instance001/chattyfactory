@@ -1,0 +1,6 @@
+post-step smoke checks
+work_order: wo7
+project_root: C:\Users\User\Desktop\chatty-modules\chattyfactory-module\output\lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window
+spec_root: C:\Users\User\Desktop\chatty-modules\chattyfactory-module\output\lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window
+project_spec.spec_id: chattyfactory.project_spec.v1
+project_spec.language: html

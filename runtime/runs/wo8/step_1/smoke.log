@@ -1,0 +1,5 @@
+post-step smoke checks
+work_order: wo8
+project_root: C:\Users\User\Desktop\chatty-modules\chattyfactory-module\output\lets_patch_the_gpu_monitor_to_track_real_gpu_telemetry
+spec_root: C:\Users\User\Desktop\chatty-modules\chattyfactory-module\output\lets_patch_the_gpu_monitor_to_track_real_gpu_telemetry
+note: no ProjectSpec.json in spec_root (skipping spec checks)

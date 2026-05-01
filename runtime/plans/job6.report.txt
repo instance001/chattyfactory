@@ -1,0 +1,1 @@
+each step must include at least one verify: clause (line: '- [ ] Step 2 | Define the file types to sort based on (e.g., '.txt', '.jpg', etc.). Verify: exists 'scratch/file_types.json'')

@@ -1,0 +1,1 @@
+step 0: Ensure index.html has required structure | apply_patch index.html | patch: @@ -1,0 +1,7 @@ | verify: exists .

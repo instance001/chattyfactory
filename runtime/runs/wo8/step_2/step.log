@@ -1,0 +1,5 @@
+step 2: Write project contract
+error: py_compile failed for main.py: File "main.py", line 4
+    \u2584\u2584 \u2584\u2584
+    ^
+SyntaxError: invalid character '\u2584' (U+2584)

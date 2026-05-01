@@ -1,0 +1,12 @@
+- [ ] ensure_dir build_a_file_sorting_tool_in_python_language_2
+  | verify: exists build_a_file_sorting_tool_in_python_language_2
+- [ ] write_file src/main.py contents: import os\nclass FileSorter:\n    def sort_files(self, directory):\n        files = os.listdir(directory)\n        sorted_files = sorted(files, key=lambda x: int(x.split('.')[0]))\n        return '\n'.join(sorted_files)\n
+- [ ] ensure_dir build_a_file_sorting_tool_in_python_language_2/tests/
+  | verify: exists build_a_file_sorting_tool_in_python_language_2/tests
+- [ ] write_file build_a_file_sorting_tool_in_python_language_2/tests/test_main.py contents: import unittest\nclass TestFileSorter(unittest.TestCase):\n    def test_sort_files(self):\n        sorter = FileSorter()\n        directory = 'tests/files'  # Replace with the actual directory to test\n        sorted_content = sorter.sort_files(directory)\n        expected_output = ''\n        self.assertEqual(sorted_content, expected_output)
+- [ ] apply_patch build_a_file_sorting_tool_in_python_language_2/tests/test_main.py | patch: <<diff_hunk>>
+- [ ] run py -3 src/main.py
+  | verify: exists tests/files/01.txt
+
+! grounding_gate_errors:
+- apply_patch references unknown path: build_a_file_sorting_tool_in_python_language_2/tests/test_main.py

@@ -1,0 +1,19 @@
+{
+  "anchors": [
+    "scratch"
+  ],
+  "anchor_scores": [
+    [
+      "scratch",
+      90
+    ]
+  ],
+  "log_tail": null,
+  "last_run_summary": "WO wo5 planned at 6 steps",
+  "failing_step": null,
+  "failing_error": null,
+  "work_order_id": "wo5",
+  "recovery_attempts": 0,
+  "base_path": "C:\\Users\\User\\Desktop\\chatty-modules\\chattyfactory-module",
+  "recent_logs": []
+}

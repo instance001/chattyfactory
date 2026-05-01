@@ -1,0 +1,1 @@
+step line missing action segment (expected '| action ... |'): '- [ ] Create directory for the tool: `mkdir -p $scratch/tool`'

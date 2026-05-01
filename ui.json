@@ -1,0 +1,159 @@
+{
+  "title": "ChattyFactory",
+  "description": "Track the current work order, phase, and artifacts so the orchestrator can debrief cleanly.",
+  "sections": [
+    {
+      "id": "job",
+      "title": "Job Brief",
+      "description": "The stable request and anchor for the current work order.",
+      "blocks": [
+        {
+          "kind": "callout",
+          "title": "Factory Rule",
+          "tone": "warning",
+          "text": "Freeze the interpretation once the user confirms it, then route changes through repair instead of silent drift."
+        }
+      ],
+      "fields": ["job_id", "anchor", "request_1_sentence", "interpretation_frozen"]
+    },
+    {
+      "id": "execution",
+      "title": "Execution",
+      "description": "Track the current phase, latest result, and active risks.",
+      "blocks": [
+        {
+          "kind": "record",
+          "title": "Factory Snapshot",
+          "fields": ["job_id", "current_phase", "next_action"],
+          "empty": "Fill in the work order, phase, and next action to see the snapshot."
+        },
+        {
+          "kind": "kanban",
+          "title": "Execution Board",
+          "field": "work_board",
+          "lanes": ["To Do", "Doing", "Review", "Blocked", "Done"],
+          "max_rows": 16,
+          "filter_placeholder": "Find lane, task, or blocker...",
+          "filter_presets": [
+            { "label": "Doing", "query": "doing" },
+            { "label": "Review", "query": "review" },
+            { "label": "Blocked", "query": "blocked" }
+          ],
+          "empty": "Add lines like [Doing] Validate build or Review | Prepare handoff to preview the board."
+        }
+      ],
+      "fields": ["current_phase", "latest_result", "open_issues_risks", "work_board"]
+    },
+    {
+      "id": "handoff",
+      "title": "Artifacts & Handoff",
+      "description": "The key files and the one-line next action.",
+      "blocks": [
+        {
+          "kind": "actions",
+          "actions": ["save", "reload", "open_folder", "open_readme", "open_state"]
+        },
+        {
+          "kind": "stat",
+          "label": "Current Phase",
+          "field": "current_phase",
+          "empty": "Pick the active phase."
+        },
+        {
+          "kind": "artifact_preview",
+          "title": "Artifact Preview",
+          "field": "key_artifacts",
+          "empty": "Add a module-local artifact path to preview it here."
+        }
+      ],
+      "fields": ["key_artifacts", "next_action"],
+      "sidebar": true
+    }
+  ],
+  "fields": [
+    {
+      "id": "job_id",
+      "label": "Job ID / Work order",
+      "kind": "singleline",
+      "placeholder": "e.g. WO-2026-03-04-A",
+      "help": "A stable work-order style name makes log review easier.",
+      "section": "job"
+    },
+    {
+      "id": "anchor",
+      "label": "Anchor (path or anchor name)",
+      "kind": "singleline",
+      "placeholder": "e.g. output/project_x/ or docs/...",
+      "help": "Where the user can find the main trail of this job.",
+      "section": "job"
+    },
+    {
+      "id": "request_1_sentence",
+      "label": "Request (1 sentence)",
+      "kind": "multiline",
+      "rows": 2,
+      "help": "Keep this to one tight summary sentence.",
+      "section": "job"
+    },
+    {
+      "id": "interpretation_frozen",
+      "label": "Interpretation (frozen)",
+      "kind": "multiline",
+      "rows": 2,
+      "placeholder": "Short restatement, frozen once confirmed.",
+      "help": "Use this after the task has been confirmed to avoid drift.",
+      "section": "job"
+    },
+    {
+      "id": "current_phase",
+      "label": "Current phase",
+      "kind": "choice",
+      "options": ["planning", "confirmed", "running", "repair"],
+      "help": "A quick snapshot of where the job is right now.",
+      "section": "execution"
+    },
+    {
+      "id": "latest_result",
+      "label": "Latest result",
+      "kind": "multiline",
+      "rows": 2,
+      "placeholder": "success/fail + 1 line why",
+      "help": "The most recent meaningful outcome.",
+      "section": "execution"
+    },
+    {
+      "id": "key_artifacts",
+      "label": "Key artifacts",
+      "kind": "multiline",
+      "rows": 5,
+      "placeholder": "runtime/plans/<job>.*\nruntime/runs/<wo>/...\noutput/<project>/...",
+      "help": "List the files another person or module would need first.",
+      "section": "handoff"
+    },
+    {
+      "id": "open_issues_risks",
+      "label": "Open issues / risks",
+      "kind": "multiline",
+      "rows": 4,
+      "help": "Current blockers, uncertainty, or repair work.",
+      "section": "execution"
+    },
+    {
+      "id": "work_board",
+      "label": "Work board",
+      "kind": "multiline",
+      "rows": 6,
+      "placeholder": "[To Do] Confirm constraints\n[Doing] Build module surface\n[Review] Test handoff\n[Done] Freeze interpretation",
+      "help": "Use [Lane] task or Lane | task lines if you want the Execution Board to render them as a kanban board.",
+      "section": "execution"
+    },
+    {
+      "id": "next_action",
+      "label": "Next action",
+      "kind": "singleline",
+      "placeholder": "One sentence.",
+      "help": "Keep this direct and immediately actionable.",
+      "section": "handoff"
+    }
+  ]
+}

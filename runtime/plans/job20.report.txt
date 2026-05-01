@@ -1,0 +1,1 @@
+each step must include at least one verify: clause (line: '- [ ] Step 1 | Create a new Python project directory named `file_sorter` | action: mkdir file_sorter')

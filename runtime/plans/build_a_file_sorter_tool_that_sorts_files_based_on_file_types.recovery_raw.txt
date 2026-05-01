@@ -1,0 +1,71 @@
+- [ ] ensure_dir scratch/tools
+- [ ] write_file scratch/tools/file_sorter.py | contents:
+```
+import os
+from typing import List
+
+def sort_files_by_type(directory: str) -> List[str]:
+    file_types = {
+        'txt': ['.txt'],
+        'jpg': ['.jpg', '.jpeg', '.png'],
+        'pdf': ['.pdf'],
+        'doc': ['.doc', '.docx'],
+        'xls': ['.xls', '.xlsx']
+    }
+    
+    sorted_files = []
+    for root, _, files in os.walk(directory):
+        for file in files:
+            for file_type, extensions in file_types.items():
+                if file.endswith(tuple(extensions)):
+                    sorted_files.append(os.path.join(root, file))
+                    break
+    return sorted_files
+
+if __name__ == "__main__":
+    directory = input("Enter the directory to sort: ")
+    if not os.path.isdir(directory):
+        print("Invalid directory.")
+        exit()
+    
+    sorted_files = sort_files_by_type(directory)
+    for file in sorted_files:
+        print(file)
+```
+- [ ] apply_patch scratch/tools/file_sorter.py | patch: 
+```
+# Added a command to sort files by type
+import os
+from typing import List
+
+def sort_files_by_type(directory: str) -> List[str]:
+    file_types = {
+        'txt': ['.txt'],
+        'jpg': ['.jpg', '.jpeg', '.png'],
+        'pdf': ['.pdf'],
+        'doc': ['.doc', '.docx'],
+        'xls': ['.xls', '.xlsx']
+    }
+    
+    sorted_files = []
+    for root, _, files in os.walk(directory):
+        for file in files:
+            for file_type, extensions in file_types.items():
+                if file.endswith(tuple(extensions)):
+                    sorted_files.append(os.path.join(root, file))
+                    break
+    return sorted_files
+
+if __name__ == "__main__":
+    directory = input("Enter the directory to sort: ")
+    if not os.path.isdir(directory):
+        print("Invalid directory.")
+        exit()
+    
+    sorted_files = sort_files_by_type(directory)
+    for file in sorted_files:
+        print(file)
+```
+
+! grounding_gate_errors:
+- verify references unknown path: scratch/tools

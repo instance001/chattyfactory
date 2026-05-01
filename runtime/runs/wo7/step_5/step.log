@@ -1,0 +1,2 @@
+step 5: Acceptance: help | run py -3 smoke_check.py --help | verify: exists . | verify: exists -3 | verify: output_contains usage:
+error: verify exists failed: C:\Users\User\Desktop\chatty-modules\chattyfactory-module\output\lets_build_a_simple_gui_dashboard_with_a_gpu_monitor_window\-3
