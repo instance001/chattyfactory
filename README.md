@@ -2,7 +2,7 @@
 
 #FOREWORD
 
-This iteration of chattyfactory has taken the concept about as far as it can. By collapsing to webview only builds, we have managed to create a system that fits the design concept of "simple, plain language request in, working artifact out, patch to complexity one moving part at a time, zero calls, with small, local ggufs". What is missing is the build agnostic, code agnostic parts of the concept. This is currently being addressed in a new prototype rebuild slated to be released under a new repo shortly. Once it drops, this older, many iterated prototype will be archived and signposted towards that new repo.
+This iteration of chattyfactory has taken the concept about as far as it can. By collapsing to webview only builds, we have managed to create a system that fits the design concept of "simple, plain language request in, working artifact out, patch to complexity one moving part at a time, zero calls, with small, local ggufs". What is missing is the build agnostic, code agnostic parts of the concept. This is currently being addressed in a new prototype rebuild found here: https://github.com/instance001/chatty-factory
 
 ChattyFactory is a local-first project factory for small GGUF models. The goal is simple: plain-language request in, working local project out, then one plain-language patch request at a time until the user is happy.
 
